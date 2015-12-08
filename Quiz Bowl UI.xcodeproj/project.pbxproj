@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD33658C1BF106A900E19547 /* fire-wallpaper-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD33658B1BF106A900E19547 /* fire-wallpaper-1.jpg */; };
 		FD8FB4CC1BEA6C04009984A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FB4CB1BEA6C04009984A0 /* AppDelegate.swift */; };
 		FD8FB4CE1BEA6C04009984A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FB4CD1BEA6C04009984A0 /* ViewController.swift */; };
 		FD8FB4D01BEA6C04009984A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD8FB4CF1BEA6C04009984A0 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD33658B1BF106A900E19547 /* fire-wallpaper-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "fire-wallpaper-1.jpg"; path = "../../../../Desktop/fire-wallpaper-1.jpg"; sourceTree = "<group>"; };
 		FD8FB4C81BEA6C04009984A0 /* Quiz Bowl UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz Bowl UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8FB4CB1BEA6C04009984A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD8FB4CD1BEA6C04009984A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				FD8FB4CD1BEA6C04009984A0 /* ViewController.swift */,
 				FD8FB4CF1BEA6C04009984A0 /* Assets.xcassets */,
 				FD8FB4D11BEA6C04009984A0 /* Main.storyboard */,
+				FD33658B1BF106A900E19547 /* fire-wallpaper-1.jpg */,
 				FD8FB4D41BEA6C04009984A0 /* Info.plist */,
 			);
 			path = "Quiz Bowl UI";
@@ -175,6 +178,7 @@
 			files = (
 				FD8FB4D01BEA6C04009984A0 /* Assets.xcassets in Resources */,
 				FD8FB4D31BEA6C04009984A0 /* Main.storyboard in Resources */,
+				FD33658C1BF106A900E19547 /* fire-wallpaper-1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +380,7 @@
 				FD8FB4E41BEA6C04009984A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD8FB4E51BEA6C04009984A0 /* Build configuration list for PBXNativeTarget "Quiz Bowl UITests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +389,7 @@
 				FD8FB4E71BEA6C04009984A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
