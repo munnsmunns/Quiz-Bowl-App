@@ -11,6 +11,7 @@
 		FD44B28D1C1F2AD2001CC950 /* pcat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD44B28C1C1F2AD2001CC950 /* pcat.jpg */; };
 		FD44B28F1C1F2BD9001CC950 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = FD44B28E1C1F2BD9001CC950 /* images.png */; };
 		FD44B2911C1F2CB4001CC950 /* pcat1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD44B2901C1F2CB4001CC950 /* pcat1.jpg */; };
+		FD65DDD91C231E3900CDB6CF /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = FD65DDD81C231E3900CDB6CF /* AppIcon.appiconset */; };
 		FD8FB4CC1BEA6C04009984A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FB4CB1BEA6C04009984A0 /* AppDelegate.swift */; };
 		FD8FB4CE1BEA6C04009984A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FB4CD1BEA6C04009984A0 /* ViewController.swift */; };
 		FD8FB4D01BEA6C04009984A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD8FB4CF1BEA6C04009984A0 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		FD44B28C1C1F2AD2001CC950 /* pcat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pcat.jpg; path = ../../../../Desktop/pcat.jpg; sourceTree = "<group>"; };
 		FD44B28E1C1F2BD9001CC950 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = images.png; path = ../../../../Desktop/images.png; sourceTree = "<group>"; };
 		FD44B2901C1F2CB4001CC950 /* pcat1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pcat1.jpg; path = ../../../../Desktop/pcat1.jpg; sourceTree = "<group>"; };
+		FD65DDD81C231E3900CDB6CF /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = Assets.xcassets/AppIcon.appiconset; sourceTree = "<group>"; };
 		FD8FB4C81BEA6C04009984A0 /* Quiz Bowl UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz Bowl UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8FB4CB1BEA6C04009984A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD8FB4CD1BEA6C04009984A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				FD8FB4CF1BEA6C04009984A0 /* Assets.xcassets */,
 				FD8FB4D11BEA6C04009984A0 /* Main.storyboard */,
 				FD44B2901C1F2CB4001CC950 /* pcat1.jpg */,
+				FD65DDD81C231E3900CDB6CF /* AppIcon.appiconset */,
 				FD44B28E1C1F2BD9001CC950 /* images.png */,
 				FD44B28C1C1F2AD2001CC950 /* pcat.jpg */,
 				FD33658B1BF106A900E19547 /* fire-wallpaper-1.jpg */,
@@ -189,6 +192,7 @@
 				FD44B28F1C1F2BD9001CC950 /* images.png in Resources */,
 				FD8FB4D31BEA6C04009984A0 /* Main.storyboard in Resources */,
 				FD33658C1BF106A900E19547 /* fire-wallpaper-1.jpg in Resources */,
+				FD65DDD91C231E3900CDB6CF /* AppIcon.appiconset in Resources */,
 				FD44B28D1C1F2AD2001CC950 /* pcat.jpg in Resources */,
 				FD44B2911C1F2CB4001CC950 /* pcat1.jpg in Resources */,
 			);
