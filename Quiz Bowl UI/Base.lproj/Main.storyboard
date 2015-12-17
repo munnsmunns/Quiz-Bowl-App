@@ -793,7 +793,7 @@ Gw
                                                         </button>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="40" minWidth="40" maxWidth="1000" id="6Yr-lG-dgu">
+                                                <tableColumn width="138" minWidth="40" maxWidth="1000" id="6Yr-lG-dgu">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -807,7 +807,7 @@ Gw
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <button verticalHuggingPriority="750" id="gaR-IR-Wef">
-                                                            <rect key="frame" x="160" y="1" width="40" height="32"/>
+                                                            <rect key="frame" x="160" y="1" width="138" height="32"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                             <buttonCell key="cell" type="push" title="10 Points" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7ah-cT-qXW">
                                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
@@ -815,7 +815,7 @@ Gw
                                                             </buttonCell>
                                                         </button>
                                                         <button verticalHuggingPriority="750" id="UL2-Fp-4lh">
-                                                            <rect key="frame" x="160" y="35" width="40" height="32"/>
+                                                            <rect key="frame" x="160" y="35" width="138" height="32"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                             <buttonCell key="cell" type="push" title="15 Points" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8du-nq-lcz">
                                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
