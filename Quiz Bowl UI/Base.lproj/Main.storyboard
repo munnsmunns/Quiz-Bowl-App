@@ -681,10 +681,6 @@ Gw
                                 <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="axesIndependently" image="images" id="twv-vS-vpX"/>
                             </imageView>
-                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xXd-9m-9EA">
-                                <rect key="frame" x="558" y="413" width="242" height="175"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="pcat1" id="BEb-Af-4Pq"/>
-                            </imageView>
                             <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e2Q-go-SVN">
                                 <rect key="frame" x="558" y="215" width="242" height="175"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="pcat1" id="JA0-bc-YFI"/>
@@ -696,10 +692,6 @@ Gw
                             <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SbY-Of-lRX">
                                 <rect key="frame" x="0.0" y="215" width="242" height="175"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="pcat" id="6bd-2f-rsm"/>
-                            </imageView>
-                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Yx-br-W0i">
-                                <rect key="frame" x="0.0" y="413" width="242" height="175"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="pcat" id="dg0-pR-lre"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Cg-Ac-cmd">
                                 <rect key="frame" x="317" y="538" width="167" height="37"/>
@@ -847,7 +839,7 @@ Gw
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="pcat1" id="1xf-AA-wCV"/>
                             </imageView>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yKM-8Y-BUR">
-                                <rect key="frame" x="633" y="322" width="153" height="32"/>
+                                <rect key="frame" x="603" y="448" width="153" height="32"/>
                                 <buttonCell key="cell" type="push" title="Lightning Round" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="P4s-UM-YCQ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name="Krungthep"/>
