@@ -677,10 +677,6 @@ Gw
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="63H-vR-f9g">
-                                <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="axesIndependently" image="images" id="twv-vS-vpX"/>
-                            </imageView>
                             <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e2Q-go-SVN">
                                 <rect key="frame" x="558" y="215" width="242" height="175"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="pcat1" id="JA0-bc-YFI"/>
@@ -700,6 +696,9 @@ Gw
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <action selector="Title:" target="XfG-lQ-9wD" id="H72-vx-63Y"/>
+                                </connections>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vKA-Mx-h5G">
                                 <rect key="frame" x="264" y="497" width="87" height="37"/>
@@ -804,10 +803,13 @@ Gw
                                                             <buttonCell key="cell" type="push" title="10 Points" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7ah-cT-qXW">
                                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                                                 <font key="font" size="13" name="Krungthep"/>
+                                                                <connections>
+                                                                    <action selector="ClickButton:" target="XfG-lQ-9wD" id="Oa1-IY-6OG"/>
+                                                                </connections>
                                                             </buttonCell>
                                                         </button>
                                                         <button verticalHuggingPriority="750" id="UL2-Fp-4lh">
-                                                            <rect key="frame" x="159.97076858950697" y="35" width="138" height="32"/>
+                                                            <rect key="frame" x="160" y="35" width="138" height="32"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                             <buttonCell key="cell" type="push" title="15 Points" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8du-nq-lcz">
                                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
@@ -845,6 +847,10 @@ Gw
                                     <font key="font" size="13" name="Krungthep"/>
                                 </buttonCell>
                             </button>
+                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="63H-vR-f9g">
+                                <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="axesIndependently" image="images" id="twv-vS-vpX"/>
+                            </imageView>
                         </subviews>
                     </view>
                 </viewController>
