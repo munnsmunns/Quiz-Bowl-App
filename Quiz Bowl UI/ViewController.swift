@@ -27,7 +27,6 @@ class ViewController: NSViewController {
         }
     }
     
-    // I like trains
     var scores = [[Int]](count: 2, repeatedValue: [Int](count: 60, repeatedValue: 0) )
     
     var round = 1
