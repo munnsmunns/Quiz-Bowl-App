@@ -775,7 +775,7 @@ Gw
                                                         </button>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="137.33203125" minWidth="40" maxWidth="1000" id="6Yr-lG-dgu">
+                                                <tableColumn width="137" minWidth="40" maxWidth="1000" id="6Yr-lG-dgu">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -794,7 +794,7 @@ Gw
                                     <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="7lg-D2-l0t">
-                                    <rect key="frame" x="0.0" y="403" width="300" height="15"/>
+                                    <rect key="frame" x="0.0" y="2" width="0.0" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="svh-gg-lw2">
