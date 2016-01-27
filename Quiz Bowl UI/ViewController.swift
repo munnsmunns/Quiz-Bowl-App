@@ -10,15 +10,20 @@ import Cocoa
 
 class ViewController: NSViewController {
     
-    //
+
     @IBOutlet weak var score1TextField: NSTextField!
+    
+    @IBOutlet weak var score2TextField: NSTextField!
 
     @IBOutlet weak var roundNumberTextField: NSTextField!
+    
+    @IBOutlet weak var scoreTable: NSScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        updateText()
     }
 
     override var representedObject: AnyObject? {
@@ -65,11 +70,12 @@ class ViewController: NSViewController {
     func updateText() -> Void {
         //team scores
         score1TextField.stringValue = String(teamScore(scores, team: 0))
-        /*score2TextField.stringValue = String(teamScore(scores, team: 1))
-        */
+        score2TextField.stringValue = String(teamScore(scores, team: 1))
         
         //Round number
         roundNumberTextField.stringValue = String(round)
+        
+        //table
         
     }
 
@@ -82,6 +88,31 @@ class ViewController: NSViewController {
         
     }
 
+    @IBAction func Team1BonusPoints(sender: AnyObject) {
+        //make changes to data
+        scores = winRound(scores, team: 0, round: round, gotBonus: true)
+        round++
+        //make changes to text
+        updateText()
 
+    }
+
+    @IBAction func Team2TenPoints(sender: AnyObject) {
+        //make changes to data
+        scores = winRound(scores, team: 1, round: round, gotBonus: false)
+        round++
+        //make changes to text
+        updateText()
+
+    }
+    
+    @IBAction func Team2BonusPoints(sender: AnyObject) {
+        //make changes to data
+        scores = winRound(scores, team: 1, round: round, gotBonus: true)
+        round++
+        //make changes to text
+        updateText()
+
+    }
 }
 
