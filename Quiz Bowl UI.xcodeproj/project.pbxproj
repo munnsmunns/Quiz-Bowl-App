@@ -31,9 +31,9 @@
 
 /* Begin PBXFileReference section */
 		FD33658B1BF106A900E19547 /* fire-wallpaper-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "fire-wallpaper-1.jpg"; path = "../../../../Desktop/fire-wallpaper-1.jpg"; sourceTree = "<group>"; };
-		FD44B28C1C1F2AD2001CC950 /* pcat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pcat.jpg; path = ../../../../Desktop/pcat.jpg; sourceTree = "<group>"; };
-		FD44B28E1C1F2BD9001CC950 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = images.png; path = ../../../../Desktop/images.png; sourceTree = "<group>"; };
-		FD44B2901C1F2CB4001CC950 /* pcat1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pcat1.jpg; path = ../../../../Desktop/pcat1.jpg; sourceTree = "<group>"; };
+		FD44B28C1C1F2AD2001CC950 /* pcat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pcat.jpg; sourceTree = "<group>"; };
+		FD44B28E1C1F2BD9001CC950 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
+		FD44B2901C1F2CB4001CC950 /* pcat1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pcat1.jpg; sourceTree = "<group>"; };
 		FD65DDD81C231E3900CDB6CF /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = Assets.xcassets/AppIcon.appiconset; sourceTree = "<group>"; };
 		FD8FB4C81BEA6C04009984A0 /* Quiz Bowl UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz Bowl UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8FB4CB1BEA6C04009984A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
