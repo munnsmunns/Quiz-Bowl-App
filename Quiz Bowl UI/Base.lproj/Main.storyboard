@@ -816,6 +816,9 @@ Gw
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name="Krungthep"/>
                                 </buttonCell>
+                                <connections>
+                                    <segue destination="Url-Eg-Rh3" kind="popover" popoverAnchorView="yKM-8Y-BUR" popoverBehavior="t" preferredEdge="maxY" id="byt-Vi-WFJ"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Crk-cG-RAb">
                                 <rect key="frame" x="79" y="448" width="156" height="32"/>
@@ -972,4 +975,7 @@ Gw
         <image name="pcat" width="390" height="290"/>
         <image name="pcat1" width="390" height="290"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="byt-Vi-WFJ"/>
+    </inferredMetricsTieBreakers>
 </document>
