@@ -19,6 +19,10 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var scoreTable: NSScrollView!
     
+    @IBOutlet weak var scoreTableView: NSTableView!
+    
+    @IBOutlet weak var team1TableColumn: NSTableColumn!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -75,8 +79,11 @@ class ViewController: NSViewController {
         //Round number
         roundNumberTextField.stringValue = String(round)
         
-        //table
-        
+        /*table bullshit code doesn't work
+        tableView(tableView: scoreTableView,
+            setObjectVaue: scores[0][1],
+            forTableColumn: team1TableColumn,
+            row: round)*/
     }
 
     @IBAction func Team1TenPoints(sender: AnyObject) {
