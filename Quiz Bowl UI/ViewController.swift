@@ -7,8 +7,10 @@
 //
 
 import Cocoa
+import AppKit
 
-class ViewController: NSViewController {
+
+class ViewController: NSViewController, DetailsDelegate {
     
 
     @IBOutlet weak var score1TextField: NSTextField!
@@ -17,79 +19,50 @@ class ViewController: NSViewController {
 
     @IBOutlet weak var roundNumberTextField: NSTextField!
     
-    @IBOutlet weak var scoreTable: NSScrollView!
+    @IBOutlet weak var scoreTable: NSTableView!
     
-    @IBOutlet weak var scoreTableView: NSTableView!
-    
-    @IBOutlet weak var team1TableColumn: NSTableColumn!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        /*scoreTable.setDelegate(self)
+        scoreTable.setDataSource(self)*/
+
         updateText()
     }
 
     override var representedObject: AnyObject? {
         didSet {
         // Update the view, if already loaded.
+        /*directory = Directory(folderURL: url)
+        reloadFileList()*/
+
         }
     }
-    
-    var scores = [[Int]](count: 2, repeatedValue: [Int](count: 60, repeatedValue: 0) )
-    
-    var round = 1
-    
-    let WIN = 10, BONUS = 5
-    
-    //find the sum of a teams score. first team == 0 second team == 1.
-    func teamScore(scores: [[Int]], team: Int) -> Int {
-        var sum = 0
-        //add up sum
-        for score in scores[team] {
-            sum += score
-        }
-        return sum
+   
+    //allows updateText to be called by SecondViewController
+    override func prepareForSegue(segue: NSStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationController as! SecondViewController
+        
+        controller.delegate = self
     }
-    
-    func winRound(var scores: [[Int]], team: Int, round: Int, gotBonus: Bool) -> [[Int]] {
-        //bounds check
-        if round >= scores[0].count || round < 0 || team < 0 ||
-            team >= scores.count {
-            return scores
-        }
-        
-        //apply bonus if necessary
-        var extra = 0
-        
-        if gotBonus {
-            extra = BONUS
-        }
-        
-        scores[team][round] = WIN + extra
-        
-        return scores
-    }
+
     
     func updateText() -> Void {
         //team scores
-        score1TextField.stringValue = String(teamScore(scores, team: 0))
-        score2TextField.stringValue = String(teamScore(scores, team: 1))
+        score1TextField.stringValue = String(Data.teamScore(0))
+        score2TextField.stringValue = String(Data.teamScore(1))
         
-        //Round number
-        roundNumberTextField.stringValue = String(round)
+        //question number
+        roundNumberTextField.stringValue = String(Data.question)
         
-        /*table bullshit code doesn't work
-        tableView(tableView: scoreTableView,
-            setObjectVaue: scores[0][1],
-            forTableColumn: team1TableColumn,
-            row: round)*/
     }
 
     @IBAction func Team1TenPoints(sender: AnyObject) {
         //make changes to data
-        scores = winRound(scores, team: 0, round: round, gotBonus: false)
-        round++
+        Data.winRound(0, gotBonus: false)
+        Data.question++
         //make changes to text
         updateText()
         
@@ -97,8 +70,8 @@ class ViewController: NSViewController {
 
     @IBAction func Team1BonusPoints(sender: AnyObject) {
         //make changes to data
-        scores = winRound(scores, team: 0, round: round, gotBonus: true)
-        round++
+        Data.winRound(0, gotBonus: true)
+        Data.question++
         //make changes to text
         updateText()
 
@@ -106,8 +79,8 @@ class ViewController: NSViewController {
 
     @IBAction func Team2TenPoints(sender: AnyObject) {
         //make changes to data
-        scores = winRound(scores, team: 1, round: round, gotBonus: false)
-        round++
+        Data.winRound(1, gotBonus: false)
+        Data.question++
         //make changes to text
         updateText()
 
@@ -115,11 +88,62 @@ class ViewController: NSViewController {
     
     @IBAction func Team2BonusPoints(sender: AnyObject) {
         //make changes to data
-        scores = winRound(scores, team: 1, round: round, gotBonus: true)
-        round++
+        Data.winRound(1, gotBonus: true)
+        Data.question++
         //make changes to text
         updateText()
 
     }
+    
+    /*tableView black magic
+    func reloadFileList() {
+        directoryItems = directory?.contentsOrderedBy(sortOrder, ascending: sortAscending)
+        scoreTable.reloadData()
+    }*/
 }
+    
+
+/*black magic so that the table will work
+
+extension ViewController : NSTableViewDataSource {
+    func numberOfRowsInTableView(tableView: NSTableView) -> Int {
+        return directoryItems?.count ?? 0
+    }
+}
+
+extension ViewController : NSTableViewDelegate {
+    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        
+        var image:NSImage?
+        var text:String = ""
+        var cellIdentifier: String = ""
+        
+        // 1
+        guard let item = directoryItems?[row] else {
+            return nil
+        }
+        
+        // 2
+        if tableColumn == tableView.tableColumns[0] {
+            image = item.icon
+            text = item.name
+            cellIdentifier = "NameCellID"
+        } else if tableColumn == tableView.tableColumns[1] {
+            text = item.date.description
+            cellIdentifier = "DateCellID"
+        } else if tableColumn == tableView.tableColumns[2] {
+            text = item.isFolder ? "--" : sizeFormatter.stringFromByteCount(item.size)
+            cellIdentifier = "SizeCellID"
+        }
+        
+        // 3
+        if let cell = tableView.makeViewWithIdentifier(cellIdentifier, owner: nil) as? NSTableCellView {
+            cell.textField?.stringValue = text
+            cell.imageView?.image = image ?? nil
+            return cell
+        }
+        return nil
+    }
+}*/
+
 
