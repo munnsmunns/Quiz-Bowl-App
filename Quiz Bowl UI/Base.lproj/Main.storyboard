@@ -690,9 +690,9 @@ Gw
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="pcat" id="6bd-2f-rsm"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Cg-Ac-cmd">
-                                <rect key="frame" x="317" y="551" width="167" height="37"/>
+                                <rect key="frame" x="288" y="513" width="224" height="59"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="QUIZ BOWL" id="pla-1J-fva">
-                                    <font key="font" size="28" name="Krungthep"/>
+                                    <font key="font" size="38" name="Krungthep"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -701,7 +701,7 @@ Gw
                                 <rect key="frame" x="557" y="255" width="149" height="55"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Score 2" id="bK2-bO-1uX">
                                     <font key="font" size="36" name="Krungthep"/>
-                                    <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" red="0.074509803920000006" green="0.51764705879999995" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
@@ -709,7 +709,7 @@ Gw
                                 <rect key="frame" x="109" y="255" width="149" height="55"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Score 1" id="Lzm-jg-3Os">
                                     <font key="font" size="36" name="Krungthep"/>
-                                    <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" red="0.074509803920000006" green="0.51764705879999995" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
@@ -754,7 +754,7 @@ Gw
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Znp-mc-TJw">
-                                <rect key="frame" x="351" y="519" width="76" height="24"/>
+                                <rect key="frame" x="351" y="481" width="76" height="24"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Question" id="kfO-h6-bql">
                                     <font key="font" size="15" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -762,23 +762,13 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6tA-FC-hGU">
-                                <rect key="frame" x="431" y="519" width="38" height="24"/>
+                                <rect key="frame" x="431" y="481" width="38" height="24"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="1" id="afd-kd-KeO">
                                     <font key="font" size="15" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yKM-8Y-BUR">
-                                <rect key="frame" x="324" y="469" width="153" height="32"/>
-                                <buttonCell key="cell" type="push" title="Lightning Round" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="P4s-UM-YCQ">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name="Krungthep"/>
-                                </buttonCell>
-                                <connections>
-                                    <segue destination="Url-Eg-Rh3" kind="popover" popoverAnchorView="yKM-8Y-BUR" popoverBehavior="t" preferredEdge="maxY" id="byt-Vi-WFJ"/>
-                                </connections>
-                            </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vKA-Mx-h5G">
                                 <rect key="frame" x="109" y="425" width="140" height="61"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Team 1" id="qoS-4O-hbt">
@@ -795,6 +785,16 @@ Gw
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yKM-8Y-BUR">
+                                <rect key="frame" x="324" y="445" width="153" height="32"/>
+                                <buttonCell key="cell" type="push" title="Lightning Round" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="P4s-UM-YCQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="Url-Eg-Rh3" kind="popover" popoverAnchorView="yKM-8Y-BUR" popoverBehavior="t" preferredEdge="maxY" id="byt-Vi-WFJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -805,7 +805,7 @@ Gw
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-528" y="966"/>
+            <point key="canvasLocation" x="-537" y="957"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="o2b-9h-l2T">
