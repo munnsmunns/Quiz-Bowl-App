@@ -796,11 +796,14 @@ Gw
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tmB-n1-Qu8">
-                                <rect key="frame" x="348" y="27" width="105" height="32"/>
-                                <buttonCell key="cell" type="push" title="End Game" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="twV-c9-c34">
+                                <rect key="frame" x="333" y="27" width="136" height="32"/>
+                                <buttonCell key="cell" type="push" title="Restart Game" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="twV-c9-c34">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="13" name="Krungthep"/>
                                 </buttonCell>
+                                <connections>
+                                    <segue destination="O7p-Ia-jVu" kind="sheet" id="R3q-k4-R3g"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
@@ -919,17 +922,106 @@ Gw
             <point key="canvasLocation" x="367" y="397"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="jIe-dM-c94">
+            <objects>
+                <viewController id="IhR-6b-OGk" sceneMemberID="viewController">
+                    <view key="view" id="Qpe-F7-zWf">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="198"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tg1-H0-SeE">
+                                <rect key="frame" x="66" y="147" width="213" height="31"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Change Team Name" id="rGf-oJ-CuI">
+                                    <font key="font" size="20" name="Krungthep"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BVF-gB-5CM">
+                                <rect key="frame" x="85" y="96" width="61" height="24"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Team 1" id="o23-4o-VQj">
+                                    <font key="font" size="15" name="Krungthep"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dTU-J9-EiW">
+                                <rect key="frame" x="158" y="97" width="96" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Cct-Za-zVx">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sfh-KK-9R9">
+                                <rect key="frame" x="85" y="65" width="61" height="24"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Team 2" id="9Uj-WF-JeU">
+                                    <font key="font" size="15" name="Krungthep"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3n-MS-XBL">
+                                <rect key="frame" x="158" y="66" width="96" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ibR-ne-dx6">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MLu-bW-2dj">
+                                <rect key="frame" x="143" y="17" width="80" height="32"/>
+                                <buttonCell key="cell" type="push" title="Done" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0lb-qC-tXh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="15" name="Krungthep"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="e4U-mo-22A" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1262" y="397"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="o8x-ZC-3x7">
             <objects>
                 <viewController id="r9g-6L-KEB" sceneMemberID="viewController">
                     <view key="view" id="hZ7-AP-Osx">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rjw-1v-aN8">
+                                <rect key="frame" x="351" y="531" width="94" height="31"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Settings" id="xgK-Nk-BxZ">
+                                    <font key="font" size="20" name="Krungthep"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZJ-l5-hIB">
+                                <rect key="frame" x="312" y="471" width="176" height="32"/>
+                                <buttonCell key="cell" type="push" title="Change Team Name" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zd7-Jf-4nX">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="IhR-6b-OGk" kind="popover" popoverAnchorView="lZJ-l5-hIB" popoverBehavior="t" preferredEdge="maxY" id="604-F0-n4E"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7mf-9n-Utj">
+                                <rect key="frame" x="333" y="409" width="135" height="32"/>
+                                <buttonCell key="cell" type="push" title="Change Game" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="S3B-hN-JJL">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="Krungthep"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="Sq5-tf-12W" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="367" y="1647"/>
+            <point key="canvasLocation" x="1279" y="963"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1Rc-vN-L76">
@@ -938,24 +1030,49 @@ Gw
                     <view key="view" id="htA-iZ-E3T">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAt-zi-Ul8">
+                                <rect key="frame" x="256" y="450" width="287" height="101"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="QUIZ BOWL" id="8En-O2-DyV">
+                                    <font key="font" size="50" name="Krungthep"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DSy-RG-3Le">
+                                <rect key="frame" x="18" y="20" width="450" height="24"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="By Wyatt Rawson and Matt Munns EHS MAD 2015 - 2016" id="SM1-um-Yg9">
+                                    <font key="font" size="15" name="Krungthep"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeQ-sf-Sbb">
+                                <rect key="frame" x="354" y="433" width="92" height="32"/>
+                                <buttonCell key="cell" type="push" title="PLAY" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uBv-kG-2hd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="17" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="XfG-lQ-9wD" kind="sheet" id="5tI-dg-HYc"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ASd-vz-uYC">
+                                <rect key="frame" x="613" y="16" width="120" height="32"/>
+                                <buttonCell key="cell" type="push" title="SETTINGS" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ubm-bE-fmz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="17" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="r9g-6L-KEB" kind="sheet" id="ik5-6C-p5u"/>
+                                </connections>
+                            </button>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="gPD-38-6Jq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-524" y="963"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="CTQ-0H-EjI">
-            <objects>
-                <viewController id="4cO-AK-Aqp" sceneMemberID="viewController">
-                    <view key="view" id="jA8-Sk-6Cr">
-                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="rOx-JD-Smn" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1230" y="963"/>
         </scene>
     </scenes>
     <resources>
@@ -963,4 +1080,7 @@ Gw
         <image name="pcat" width="390" height="290"/>
         <image name="pcat1" width="390" height="290"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5tI-dg-HYc"/>
+    </inferredMetricsTieBreakers>
 </document>

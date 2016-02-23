@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FD1AEDA31C6A50DD00466662 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1AEDA21C6A50DD00466662 /* SecondViewController.swift */; };
-		FD33658C1BF106A900E19547 /* fire-wallpaper-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD33658B1BF106A900E19547 /* fire-wallpaper-1.jpg */; };
 		FD43334D1C738C78005685E1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD43334C1C738C78005685E1 /* Data.swift */; };
 		FD44B28D1C1F2AD2001CC950 /* pcat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD44B28C1C1F2AD2001CC950 /* pcat.jpg */; };
 		FD44B28F1C1F2BD9001CC950 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = FD44B28E1C1F2BD9001CC950 /* images.png */; };
@@ -33,7 +32,6 @@
 
 /* Begin PBXFileReference section */
 		FD1AEDA21C6A50DD00466662 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = "Quiz Bowl UI/SecondViewController.swift"; sourceTree = "<group>"; };
-		FD33658B1BF106A900E19547 /* fire-wallpaper-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "fire-wallpaper-1.jpg"; path = "../../../../Desktop/fire-wallpaper-1.jpg"; sourceTree = "<group>"; };
 		FD43334C1C738C78005685E1 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		FD44B28C1C1F2AD2001CC950 /* pcat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pcat.jpg; sourceTree = "<group>"; };
 		FD44B28E1C1F2BD9001CC950 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				FD65DDD81C231E3900CDB6CF /* AppIcon.appiconset */,
 				FD44B28E1C1F2BD9001CC950 /* images.png */,
 				FD44B28C1C1F2AD2001CC950 /* pcat.jpg */,
-				FD33658B1BF106A900E19547 /* fire-wallpaper-1.jpg */,
 				FD8FB4D41BEA6C04009984A0 /* Info.plist */,
 				FD43334C1C738C78005685E1 /* Data.swift */,
 			);
@@ -197,7 +194,6 @@
 				FD8FB4D01BEA6C04009984A0 /* Assets.xcassets in Resources */,
 				FD44B28F1C1F2BD9001CC950 /* images.png in Resources */,
 				FD8FB4D31BEA6C04009984A0 /* Main.storyboard in Resources */,
-				FD33658C1BF106A900E19547 /* fire-wallpaper-1.jpg in Resources */,
 				FD65DDD91C231E3900CDB6CF /* AppIcon.appiconset in Resources */,
 				FD44B28D1C1F2AD2001CC950 /* pcat.jpg in Resources */,
 				FD44B2911C1F2CB4001CC950 /* pcat1.jpg in Resources */,
