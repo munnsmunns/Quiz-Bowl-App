@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F1605" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="XfG-lQ-9wD">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F1605" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="O7p-Ia-jVu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9046"/>
     </dependencies>
@@ -795,6 +795,13 @@ Gw
                                     <segue destination="Url-Eg-Rh3" kind="popover" popoverAnchorView="yKM-8Y-BUR" popoverBehavior="t" preferredEdge="maxY" id="byt-Vi-WFJ"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tmB-n1-Qu8">
+                                <rect key="frame" x="348" y="27" width="105" height="32"/>
+                                <buttonCell key="cell" type="push" title="End Game" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="twV-c9-c34">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -805,7 +812,7 @@ Gw
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-537" y="957"/>
+            <point key="canvasLocation" x="367" y="963"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="o2b-9h-l2T">
@@ -909,7 +916,46 @@ Gw
                 <customObject id="MNr-MK-N3l" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="KHJ-Yi-SjR"/>
             </objects>
-            <point key="canvasLocation" x="220" y="433"/>
+            <point key="canvasLocation" x="367" y="397"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o8x-ZC-3x7">
+            <objects>
+                <viewController id="r9g-6L-KEB" sceneMemberID="viewController">
+                    <view key="view" id="hZ7-AP-Osx">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="Sq5-tf-12W" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367" y="1647"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1Rc-vN-L76">
+            <objects>
+                <viewController id="O7p-Ia-jVu" sceneMemberID="viewController">
+                    <view key="view" id="htA-iZ-E3T">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="gPD-38-6Jq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-524" y="963"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CTQ-0H-EjI">
+            <objects>
+                <viewController id="4cO-AK-Aqp" sceneMemberID="viewController">
+                    <view key="view" id="jA8-Sk-6Cr">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="rOx-JD-Smn" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="963"/>
         </scene>
     </scenes>
     <resources>
