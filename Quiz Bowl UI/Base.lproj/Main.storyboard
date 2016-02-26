@@ -792,6 +792,7 @@ Gw
                                     <font key="font" size="13" name="Krungthep"/>
                                 </buttonCell>
                                 <connections>
+                                    <action selector="lightningRoundButton:" target="XfG-lQ-9wD" id="dWV-4G-KaD"/>
                                     <segue destination="Url-Eg-Rh3" kind="popover" popoverAnchorView="yKM-8Y-BUR" popoverBehavior="t" preferredEdge="maxY" id="byt-Vi-WFJ"/>
                                 </connections>
                             </button>
@@ -1031,6 +1032,10 @@ Gw
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLI-Vv-XSa">
+                                <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Quiz Bowl Starting Page" id="q7s-Gp-ZSJ"/>
+                            </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAt-zi-Ul8">
                                 <rect key="frame" x="256" y="450" width="287" height="101"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="QUIZ BOWL" id="8En-O2-DyV">
@@ -1047,24 +1052,24 @@ Gw
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeQ-sf-Sbb">
-                                <rect key="frame" x="354" y="433" width="92" height="32"/>
-                                <buttonCell key="cell" type="push" title="PLAY" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uBv-kG-2hd">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="17" name="Krungthep"/>
-                                </buttonCell>
-                                <connections>
-                                    <segue destination="XfG-lQ-9wD" kind="sheet" id="5tI-dg-HYc"/>
-                                </connections>
-                            </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ASd-vz-uYC">
-                                <rect key="frame" x="613" y="16" width="120" height="32"/>
+                                <rect key="frame" x="660" y="16" width="120" height="32"/>
                                 <buttonCell key="cell" type="push" title="SETTINGS" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ubm-bE-fmz">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="17" name="Krungthep"/>
+                                    <font key="font" size="15" name="Krungthep"/>
                                 </buttonCell>
                                 <connections>
                                     <segue destination="r9g-6L-KEB" kind="sheet" id="ik5-6C-p5u"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeQ-sf-Sbb">
+                                <rect key="frame" x="558" y="16" width="92" height="32"/>
+                                <buttonCell key="cell" type="push" title="PLAY" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uBv-kG-2hd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="15" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="XfG-lQ-9wD" kind="sheet" id="5tI-dg-HYc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1076,6 +1081,7 @@ Gw
         </scene>
     </scenes>
     <resources>
+        <image name="Quiz Bowl Starting Page" width="800" height="600"/>
         <image name="images" width="135" height="90"/>
         <image name="pcat" width="390" height="290"/>
         <image name="pcat1" width="390" height="290"/>

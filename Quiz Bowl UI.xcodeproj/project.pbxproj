@@ -18,6 +18,7 @@
 		FD8FB4D01BEA6C04009984A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD8FB4CF1BEA6C04009984A0 /* Assets.xcassets */; };
 		FD8FB4D31BEA6C04009984A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD8FB4D11BEA6C04009984A0 /* Main.storyboard */; };
 		FD8FB4DE1BEA6C04009984A0 /* Quiz_Bowl_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FB4DD1BEA6C04009984A0 /* Quiz_Bowl_UITests.swift */; };
+		FDB363A31C7E14AE002D2C34 /* Quiz Bowl Starting Page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDB363A21C7E14AE002D2C34 /* Quiz Bowl Starting Page.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		FD8FB4D91BEA6C04009984A0 /* Quiz Bowl UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quiz Bowl UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8FB4DD1BEA6C04009984A0 /* Quiz_Bowl_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_Bowl_UITests.swift; sourceTree = "<group>"; };
 		FD8FB4DF1BEA6C04009984A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB363A21C7E14AE002D2C34 /* Quiz Bowl Starting Page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Quiz Bowl Starting Page.jpg"; path = "../MAD/Quiz Bowl UI/Quiz Bowl UI/Quiz Bowl Starting Page.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		FD8FB4BF1BEA6C04009984A0 = {
 			isa = PBXGroup;
 			children = (
+				FDB363A21C7E14AE002D2C34 /* Quiz Bowl Starting Page.jpg */,
 				FD1AEDA21C6A50DD00466662 /* SecondViewController.swift */,
 				FD8FB4CA1BEA6C04009984A0 /* Quiz Bowl UI */,
 				FD8FB4DC1BEA6C04009984A0 /* Quiz Bowl UITests */,
@@ -193,6 +196,7 @@
 			files = (
 				FD8FB4D01BEA6C04009984A0 /* Assets.xcassets in Resources */,
 				FD44B28F1C1F2BD9001CC950 /* images.png in Resources */,
+				FDB363A31C7E14AE002D2C34 /* Quiz Bowl Starting Page.jpg in Resources */,
 				FD8FB4D31BEA6C04009984A0 /* Main.storyboard in Resources */,
 				FD65DDD91C231E3900CDB6CF /* AppIcon.appiconset in Resources */,
 				FD44B28D1C1F2AD2001CC950 /* pcat.jpg in Resources */,

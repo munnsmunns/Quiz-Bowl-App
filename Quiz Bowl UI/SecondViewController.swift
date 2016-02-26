@@ -34,7 +34,7 @@ class SecondViewController: NSViewController {
         team2Score = team2Round1.integerValue + team2Round2.integerValue
         
         Data.lightningRound(team1Score, team2Score: team2Score)
-                
+        
         dismissController(SecondViewController)
         
     }

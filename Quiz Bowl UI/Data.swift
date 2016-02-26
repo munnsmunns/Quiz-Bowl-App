@@ -19,6 +19,8 @@ public class Data {
     
     public static let WIN = 10, BONUS = 5
     
+    public static var isLightningRound = false
+    
     //find the sum of a teams score. first team == 0 second team == 1.
     static func teamScore(team: Int) -> Int {
         var sum = 0

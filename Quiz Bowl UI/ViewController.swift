@@ -21,7 +21,6 @@ class ViewController: NSViewController, DetailsDelegate {
     
     @IBOutlet weak var scoreTable: NSTableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,11 +42,17 @@ class ViewController: NSViewController, DetailsDelegate {
    
     //allows updateText to be called by SecondViewController
     override func prepareForSegue(segue: NSStoryboardSegue, sender: AnyObject?) {
-        let controller = segue.destinationController as! SecondViewController
         
+        //only use changes with lightning round
+            
+        let controller: SecondViewController! = segue.destinationController as! SecondViewController
         controller.delegate = self
+
     }
 
+    @IBAction func lightningRoundButton(sender: AnyObject) {
+        Data.isLightningRound = true
+    }
     
     func updateText() -> Void {
         //team scores
@@ -56,6 +61,9 @@ class ViewController: NSViewController, DetailsDelegate {
         
         //question number
         roundNumberTextField.stringValue = String(Data.question)
+        
+        //makes it not break
+        Data.isLightningRound = false
         
     }
 
