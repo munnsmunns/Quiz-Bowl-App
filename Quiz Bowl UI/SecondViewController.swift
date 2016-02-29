@@ -19,6 +19,9 @@ class SecondViewController: NSViewController {
     @IBOutlet weak var team1Round2: NSTextField!
     @IBOutlet weak var team2Round1: NSTextField!
     @IBOutlet weak var team2Round2: NSTextField!
+    @IBOutlet weak var team1NameChange: NSTextField!
+    @IBOutlet weak var team2NameChange: NSTextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +40,13 @@ class SecondViewController: NSViewController {
         
         dismissController(SecondViewController)
         
+    }
+    
+    @IBAction func nameDoneButton(sender: AnyObject) {
+        Data.team1Name = team1NameChange.stringValue
+        Data.team2Name = team2NameChange.stringValue
+        
+        dismissController(SecondViewController)
     }
     
     weak var delegate: DetailsDelegate?

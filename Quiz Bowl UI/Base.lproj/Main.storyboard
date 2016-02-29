@@ -797,13 +797,23 @@ Gw
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tmB-n1-Qu8">
-                                <rect key="frame" x="333" y="27" width="136" height="32"/>
+                                <rect key="frame" x="283" y="27" width="136" height="32"/>
                                 <buttonCell key="cell" type="push" title="Restart Game" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="twV-c9-c34">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name="Krungthep"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="O7p-Ia-jVu" kind="sheet" id="R3q-k4-R3g"/>
+                                    <action selector="RestartGameButton:" target="XfG-lQ-9wD" id="EVp-Lo-6ta"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IiH-Je-lqr">
+                                <rect key="frame" x="419" y="27" width="99" height="32"/>
+                                <buttonCell key="cell" type="push" title="Settings" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vZc-T2-kTx">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="r9g-6L-KEB" kind="sheet" id="aZx-mI-xb0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -812,6 +822,8 @@ Gw
                         <outlet property="roundNumberTextField" destination="6tA-FC-hGU" id="mxe-iv-Ja1"/>
                         <outlet property="score1TextField" destination="hNT-ox-Uhn" id="RIY-lO-Olx"/>
                         <outlet property="score2TextField" destination="iV7-Wj-HhH" id="Hbi-U8-1IB"/>
+                        <outlet property="team1TextField" destination="vKA-Mx-h5G" id="leg-uq-8NA"/>
+                        <outlet property="team2TextField" destination="a90-Xr-F8i" id="7pj-Sg-r9k"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -922,10 +934,10 @@ Gw
             </objects>
             <point key="canvasLocation" x="367" y="397"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="jIe-dM-c94">
             <objects>
-                <viewController id="IhR-6b-OGk" sceneMemberID="viewController">
+                <viewController id="IhR-6b-OGk" customClass="SecondViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Qpe-F7-zWf">
                         <rect key="frame" x="0.0" y="0.0" width="340" height="198"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -976,24 +988,31 @@ Gw
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="15" name="Krungthep"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="nameDoneButton:" target="IhR-6b-OGk" id="xqw-6E-IwK"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="team1NameChange" destination="dTU-J9-EiW" id="oM3-f3-ZAJ"/>
+                        <outlet property="team2NameChange" destination="U3n-MS-XBL" id="WU6-JO-3L0"/>
+                    </connections>
                 </viewController>
                 <customObject id="e4U-mo-22A" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1262" y="397"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="o8x-ZC-3x7">
             <objects>
-                <viewController id="r9g-6L-KEB" sceneMemberID="viewController">
+                <viewController id="r9g-6L-KEB" customClass="SecondViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="hZ7-AP-Osx">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rjw-1v-aN8">
-                                <rect key="frame" x="351" y="531" width="94" height="31"/>
+                                <rect key="frame" x="353" y="408" width="94" height="31"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Settings" id="xgK-Nk-BxZ">
                                     <font key="font" size="20" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1001,7 +1020,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZJ-l5-hIB">
-                                <rect key="frame" x="312" y="471" width="176" height="32"/>
+                                <rect key="frame" x="312" y="348" width="176" height="32"/>
                                 <buttonCell key="cell" type="push" title="Change Team Name" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zd7-Jf-4nX">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name="Krungthep"/>
@@ -1010,12 +1029,15 @@ Gw
                                     <segue destination="IhR-6b-OGk" kind="popover" popoverAnchorView="lZJ-l5-hIB" popoverBehavior="t" preferredEdge="maxY" id="604-F0-n4E"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7mf-9n-Utj">
-                                <rect key="frame" x="333" y="409" width="135" height="32"/>
-                                <buttonCell key="cell" type="push" title="Change Game" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="S3B-hN-JJL">
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rg9-TX-Trj">
+                                <rect key="frame" x="711" y="13" width="75" height="32"/>
+                                <buttonCell key="cell" type="push" title="DONE" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7Rb-eV-5X4">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name="Krungthep"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="dismissController:" target="r9g-6L-KEB" id="ZtG-Kx-s1D"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
@@ -1024,10 +1046,10 @@ Gw
             </objects>
             <point key="canvasLocation" x="1279" y="963"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="1Rc-vN-L76">
             <objects>
-                <viewController id="O7p-Ia-jVu" sceneMemberID="viewController">
+                <viewController id="O7p-Ia-jVu" customClass="SecondViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="htA-iZ-E3T">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1053,23 +1075,23 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ASd-vz-uYC">
-                                <rect key="frame" x="660" y="16" width="120" height="32"/>
+                                <rect key="frame" x="660" y="14" width="120" height="32"/>
                                 <buttonCell key="cell" type="push" title="SETTINGS" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ubm-bE-fmz">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="15" name="Krungthep"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="r9g-6L-KEB" kind="sheet" id="ik5-6C-p5u"/>
+                                    <segue destination="r9g-6L-KEB" kind="sheet" id="5NZ-5X-8es"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeQ-sf-Sbb">
-                                <rect key="frame" x="558" y="16" width="92" height="32"/>
+                                <rect key="frame" x="559" y="14" width="92" height="32"/>
                                 <buttonCell key="cell" type="push" title="PLAY" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uBv-kG-2hd">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="15" name="Krungthep"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="XfG-lQ-9wD" kind="sheet" id="5tI-dg-HYc"/>
+                                    <segue destination="XfG-lQ-9wD" kind="sheet" id="wv1-WG-IjH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1087,6 +1109,7 @@ Gw
         <image name="pcat1" width="390" height="290"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5tI-dg-HYc"/>
+        <segue reference="wv1-WG-IjH"/>
+        <segue reference="aZx-mI-xb0"/>
     </inferredMetricsTieBreakers>
 </document>

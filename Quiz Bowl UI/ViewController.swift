@@ -21,6 +21,11 @@ class ViewController: NSViewController, DetailsDelegate {
     
     @IBOutlet weak var scoreTable: NSTableView!
     
+    @IBOutlet weak var team1TextField: NSTextField!
+    
+    @IBOutlet weak var team2TextField: NSTextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -62,9 +67,9 @@ class ViewController: NSViewController, DetailsDelegate {
         //question number
         roundNumberTextField.stringValue = String(Data.question)
         
-        //makes it not break
-        Data.isLightningRound = false
-        
+        //team names
+        team1TextField.stringValue = Data.team1Name
+        team2TextField.stringValue = Data.team2Name
     }
 
     @IBAction func Team1TenPoints(sender: AnyObject) {
@@ -101,6 +106,11 @@ class ViewController: NSViewController, DetailsDelegate {
         //make changes to text
         updateText()
 
+    }
+    
+    @IBAction func RestartGameButton(sender: AnyObject) {
+        Data.reset()
+        dismissController(ViewController)
     }
     
     /*tableView black magic

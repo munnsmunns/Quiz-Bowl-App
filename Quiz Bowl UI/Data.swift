@@ -52,10 +52,22 @@ public class Data {
     
     static func lightningRound(team1Score: Int, team2Score: Int) -> Void {
         
+        //lightning round score is saved in "question 0"
         scores[0][0] += team1Score
         scores[1][0] += team2Score
         return
         
+    }
+    
+    static func reset() ->  Void {
+        //reset data to initial value
+        team1Name = "Team 1"
+        team2Name = "Team 2"
+        question = 1
+        for var x = 0; x <= 60; x++ {
+            scores[0][x] = 0
+            scores[1][x] = 0
+        }
     }
 
 }
