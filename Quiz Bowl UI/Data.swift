@@ -64,7 +64,7 @@ public class Data {
         team1Name = "Team 1"
         team2Name = "Team 2"
         question = 1
-        let size = scores.count
+        let size = scores[0].count
         for var x = 0; x < size; x++ {
             scores[0][x] = 0
             scores[1][x] = 0
