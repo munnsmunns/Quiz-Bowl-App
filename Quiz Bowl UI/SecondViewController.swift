@@ -43,8 +43,16 @@ class SecondViewController: NSViewController {
     }
     
     @IBAction func nameDoneButton(sender: AnyObject) {
-        Data.team1Name = team1NameChange.stringValue
-        Data.team2Name = team2NameChange.stringValue
+        let name1 = team1NameChange.stringValue
+        let name2 = team2NameChange.stringValue
+        
+        if !name1.isEmpty {
+            Data.team1Name = name1
+        }
+        if !name2.isEmpty
+        {
+            Data.team2Name = name2
+        }
         
         dismissController(SecondViewController)
     }
