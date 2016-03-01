@@ -769,17 +769,9 @@ Gw
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vKA-Mx-h5G">
-                                <rect key="frame" x="109" y="425" width="140" height="61"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Team 1" id="qoS-4O-hbt">
-                                    <font key="font" size="36" name="Krungthep"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a90-Xr-F8i">
-                                <rect key="frame" x="557" y="425" width="146" height="61"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Team 2" id="Qc1-ru-r3B">
+                                <rect key="frame" x="473" y="425" width="309" height="61"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Team 2" id="Qc1-ru-r3B">
                                     <font key="font" size="36" name="Krungthep"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -816,6 +808,14 @@ Gw
                                     <segue destination="r9g-6L-KEB" kind="sheet" id="aZx-mI-xb0"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vKA-Mx-h5G">
+                                <rect key="frame" x="32" y="425" width="292" height="61"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Team 1" id="qoS-4O-hbt">
+                                    <font key="font" size="36" name="Krungthep"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
@@ -824,6 +824,7 @@ Gw
                         <outlet property="score2TextField" destination="iV7-Wj-HhH" id="Hbi-U8-1IB"/>
                         <outlet property="team1TextField" destination="vKA-Mx-h5G" id="leg-uq-8NA"/>
                         <outlet property="team2TextField" destination="a90-Xr-F8i" id="7pj-Sg-r9k"/>
+                        <outlet property="titleTextField" destination="1Cg-Ac-cmd" id="bQc-Ka-DB8"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -1109,7 +1110,7 @@ Gw
         <image name="pcat1" width="390" height="290"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wv1-WG-IjH"/>
         <segue reference="aZx-mI-xb0"/>
+        <segue reference="wv1-WG-IjH"/>
     </inferredMetricsTieBreakers>
 </document>

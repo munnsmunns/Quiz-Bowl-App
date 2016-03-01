@@ -25,6 +25,7 @@ class ViewController: NSViewController, DetailsDelegate {
     
     @IBOutlet weak var team2TextField: NSTextField!
     
+    @IBOutlet weak var titleTextField: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,10 +55,6 @@ class ViewController: NSViewController, DetailsDelegate {
         controller.delegate = self
 
     }
-
-    @IBAction func lightningRoundButton(sender: AnyObject) {
-        Data.isLightningRound = true
-    }
     
     func updateText() -> Void {
         //team scores
@@ -70,6 +67,10 @@ class ViewController: NSViewController, DetailsDelegate {
         //team names
         team1TextField.stringValue = Data.team1Name
         team2TextField.stringValue = Data.team2Name
+        
+        //game title
+        titleTextField.stringValue = Data.title
+        
     }
 
     @IBAction func Team1TenPoints(sender: AnyObject) {

@@ -19,7 +19,7 @@ public class Data {
     
     public static let WIN = 10, BONUS = 5
     
-    public static var isLightningRound = false
+    public static var title = "QUIZ BOWL"
     
     //find the sum of a teams score. first team == 0 second team == 1.
     static func teamScore(team: Int) -> Int {
@@ -64,7 +64,8 @@ public class Data {
         team1Name = "Team 1"
         team2Name = "Team 2"
         question = 1
-        for var x = 0; x <= 60; x++ {
+        let size = scores.count
+        for var x = 0; x < size; x++ {
             scores[0][x] = 0
             scores[1][x] = 0
         }
