@@ -789,7 +789,7 @@ Gw
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tmB-n1-Qu8">
-                                <rect key="frame" x="283" y="27" width="136" height="32"/>
+                                <rect key="frame" x="283" y="42" width="136" height="32"/>
                                 <buttonCell key="cell" type="push" title="Restart Game" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="twV-c9-c34">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name="Krungthep"/>
@@ -799,7 +799,7 @@ Gw
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IiH-Je-lqr">
-                                <rect key="frame" x="419" y="27" width="99" height="32"/>
+                                <rect key="frame" x="419" y="42" width="99" height="32"/>
                                 <buttonCell key="cell" type="push" title="Settings" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vZc-T2-kTx">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name="Krungthep"/>
@@ -816,6 +816,16 @@ Gw
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f48-QT-eZk">
+                                <rect key="frame" x="348" y="9" width="105" height="32"/>
+                                <buttonCell key="cell" type="push" title="End Game" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h9H-Xh-qFC">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="EndGameButton:" target="XfG-lQ-9wD" id="B9R-O3-EWv"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -1095,6 +1105,16 @@ Gw
                                     <segue destination="XfG-lQ-9wD" kind="sheet" id="wv1-WG-IjH"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLi-ar-rz8">
+                                <rect key="frame" x="14" y="552" width="72" height="32"/>
+                                <buttonCell key="cell" type="push" title="QUIT" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9zw-Cj-eUI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="terminate:" target="gPD-38-6Jq" id="1wL-aw-CAk"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
@@ -1110,7 +1130,7 @@ Gw
         <image name="pcat1" width="390" height="290"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aZx-mI-xb0"/>
+        <segue reference="5NZ-5X-8es"/>
         <segue reference="wv1-WG-IjH"/>
     </inferredMetricsTieBreakers>
 </document>

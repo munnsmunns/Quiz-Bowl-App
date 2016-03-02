@@ -111,6 +111,11 @@ class ViewController: NSViewController, DetailsDelegate {
     
     @IBAction func RestartGameButton(sender: AnyObject) {
         Data.reset()
+        updateText()
+    }
+    
+    @IBAction func EndGameButton(sender: AnyObject) {
+        Data.reset()
         dismissController(ViewController)
     }
     
