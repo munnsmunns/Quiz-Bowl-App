@@ -653,8 +653,8 @@ Gw
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="59" y="377" width="800" height="600"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -669,10 +669,10 @@ Gw
             </objects>
             <point key="canvasLocation" x="-537" y="232"/>
         </scene>
-        <!--View Controller-->
+        <!--Main Page-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main Page" id="XfG-lQ-9wD" customClass="ViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -689,14 +689,6 @@ Gw
                                 <rect key="frame" x="0.0" y="75" width="396" height="287"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="pcat" id="6bd-2f-rsm"/>
                             </imageView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Cg-Ac-cmd">
-                                <rect key="frame" x="288" y="513" width="224" height="59"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="QUIZ BOWL" id="pla-1J-fva">
-                                    <font key="font" size="38" name="Krungthep"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iV7-Wj-HhH">
                                 <rect key="frame" x="557" y="255" width="149" height="55"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Score 2" id="bK2-bO-1uX">
@@ -826,6 +818,14 @@ Gw
                                     <action selector="EndGameButton:" target="XfG-lQ-9wD" id="B9R-O3-EWv"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Cg-Ac-cmd">
+                                <rect key="frame" x="158" y="513" width="484" height="59"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="QUIZ BOWL" id="pla-1J-fva">
+                                    <font key="font" size="38" name="Krungthep"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
@@ -841,16 +841,16 @@ Gw
             </objects>
             <point key="canvasLocation" x="367" y="963"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Lightning Round-->
         <scene sceneID="o2b-9h-l2T">
             <objects>
-                <viewController id="Url-Eg-Rh3" customClass="SecondViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Lightning Round" id="Url-Eg-Rh3" customClass="SecondViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="7gH-QY-qxn">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="198"/>
+                        <rect key="frame" x="0.0" y="0.0" width="415" height="198"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="URC-Tg-A67">
-                                <rect key="frame" x="81" y="109" width="105" height="20"/>
+                                <rect key="frame" x="48" y="109" width="105" height="20"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Team 1 Points" id="2ZP-Bn-H4t">
                                     <font key="font" size="13" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -858,7 +858,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zce-wf-K2T">
-                                <rect key="frame" x="85" y="57" width="96" height="22"/>
+                                <rect key="frame" x="52" y="57" width="96" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="hQD-Iu-wtg">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -866,7 +866,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cT-qU-cbx">
-                                <rect key="frame" x="299" y="57" width="96" height="22"/>
+                                <rect key="frame" x="266" y="57" width="96" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Sxh-6X-VnS">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -874,7 +874,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wyb-i3-snq">
-                                <rect key="frame" x="295" y="109" width="105" height="20"/>
+                                <rect key="frame" x="262" y="109" width="105" height="20"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Team 2 Points" id="KIZ-Lf-WH1">
                                     <font key="font" size="13" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -882,7 +882,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UEh-mx-IXa">
-                                <rect key="frame" x="85" y="84" width="96" height="22"/>
+                                <rect key="frame" x="52" y="84" width="96" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="9mY-h3-Rc2">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -890,7 +890,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SZL-Mi-r9s">
-                                <rect key="frame" x="299" y="84" width="96" height="22"/>
+                                <rect key="frame" x="266" y="84" width="96" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Leq-kf-unv">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -898,7 +898,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zgp-bK-FfW">
-                                <rect key="frame" x="162" y="146" width="156" height="26"/>
+                                <rect key="frame" x="129" y="146" width="156" height="26"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Lightning Round" id="jdI-fm-svu">
                                     <font key="font" size="17" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -906,7 +906,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L5N-6p-fWN">
-                                <rect key="frame" x="204" y="20" width="73" height="32"/>
+                                <rect key="frame" x="171" y="20" width="73" height="32"/>
                                 <buttonCell key="cell" type="push" title="Done" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0tJ-NI-Yxu">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name="Krungthep"/>
@@ -916,7 +916,7 @@ Gw
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t2g-CJ-Rnn">
-                                <rect key="frame" x="212" y="87" width="57" height="17"/>
+                                <rect key="frame" x="179" y="87" width="57" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Round 1" id="BMd-ff-Ijq">
                                     <font key="font" size="13" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -924,7 +924,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1V-KK-Tnl">
-                                <rect key="frame" x="212" y="60" width="57" height="17"/>
+                                <rect key="frame" x="179" y="60" width="57" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Round 2" id="utN-H0-hLf">
                                     <font key="font" size="13" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -943,12 +943,12 @@ Gw
                 <customObject id="MNr-MK-N3l" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="KHJ-Yi-SjR"/>
             </objects>
-            <point key="canvasLocation" x="367" y="397"/>
+            <point key="canvasLocation" x="334.5" y="397"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Change Team Name-->
         <scene sceneID="jIe-dM-c94">
             <objects>
-                <viewController id="IhR-6b-OGk" customClass="SecondViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Change Team Name" id="IhR-6b-OGk" customClass="SecondViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Qpe-F7-zWf">
                         <rect key="frame" x="0.0" y="0.0" width="340" height="198"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1014,10 +1014,10 @@ Gw
             </objects>
             <point key="canvasLocation" x="1262" y="397"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Settings-->
         <scene sceneID="o8x-ZC-3x7">
             <objects>
-                <viewController id="r9g-6L-KEB" customClass="SecondViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Settings" id="r9g-6L-KEB" customClass="SecondViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="hZ7-AP-Osx">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1030,16 +1030,6 @@ Gw
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZJ-l5-hIB">
-                                <rect key="frame" x="312" y="348" width="176" height="32"/>
-                                <buttonCell key="cell" type="push" title="Change Team Name" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zd7-Jf-4nX">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name="Krungthep"/>
-                                </buttonCell>
-                                <connections>
-                                    <segue destination="IhR-6b-OGk" kind="popover" popoverAnchorView="lZJ-l5-hIB" popoverBehavior="t" preferredEdge="maxY" id="604-F0-n4E"/>
-                                </connections>
-                            </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rg9-TX-Trj">
                                 <rect key="frame" x="711" y="13" width="75" height="32"/>
                                 <buttonCell key="cell" type="push" title="DONE" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7Rb-eV-5X4">
@@ -1050,17 +1040,41 @@ Gw
                                     <action selector="dismissController:" target="r9g-6L-KEB" id="ZtG-Kx-s1D"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8H9-VS-MnV">
+                                <rect key="frame" x="279" y="283" width="242" height="32"/>
+                                <buttonCell key="cell" type="push" title="Change to GRAB THAT MARKER" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bPx-W9-0cp">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="changeGameButton:" target="r9g-6L-KEB" id="8Vd-FY-gMF"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZJ-l5-hIB">
+                                <rect key="frame" x="312" y="344" width="176" height="32"/>
+                                <buttonCell key="cell" type="push" title="Change Team Name" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zd7-Jf-4nX">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="IhR-6b-OGk" kind="popover" popoverAnchorView="lZJ-l5-hIB" popoverBehavior="t" preferredEdge="maxY" id="604-F0-n4E"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="changeGameButton" destination="8H9-VS-MnV" id="dXP-MX-fmg"/>
+                        <outlet property="settingsViewController" destination="hZ7-AP-Osx" id="2kn-SL-Ul7"/>
+                    </connections>
                 </viewController>
                 <customObject id="Sq5-tf-12W" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1279" y="963"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Starting Page-->
         <scene sceneID="1Rc-vN-L76">
             <objects>
-                <viewController id="O7p-Ia-jVu" customClass="SecondViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Starting Page" id="O7p-Ia-jVu" customClass="SecondViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="htA-iZ-E3T">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1069,14 +1083,6 @@ Gw
                                 <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Quiz Bowl Starting Page" id="q7s-Gp-ZSJ"/>
                             </imageView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAt-zi-Ul8">
-                                <rect key="frame" x="256" y="450" width="287" height="101"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="QUIZ BOWL" id="8En-O2-DyV">
-                                    <font key="font" size="50" name="Krungthep"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DSy-RG-3Le">
                                 <rect key="frame" x="18" y="20" width="450" height="24"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="By Wyatt Rawson and Matt Munns EHS MAD 2015 - 2016" id="SM1-um-Yg9">
@@ -1115,8 +1121,19 @@ Gw
                                     <action selector="terminate:" target="gPD-38-6Jq" id="1wL-aw-CAk"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAt-zi-Ul8">
+                                <rect key="frame" x="44" y="450" width="713" height="101"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="QUIZ BOWL" id="8En-O2-DyV">
+                                    <font key="font" size="50" name="Krungthep"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="mainTitle" destination="cAt-zi-Ul8" id="GGN-KS-anF"/>
+                    </connections>
                 </viewController>
                 <customObject id="gPD-38-6Jq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1130,7 +1147,7 @@ Gw
         <image name="pcat1" width="390" height="290"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5NZ-5X-8es"/>
-        <segue reference="wv1-WG-IjH"/>
+        <segue reference="cq2-FE-JQM"/>
+        <segue reference="aZx-mI-xb0"/>
     </inferredMetricsTieBreakers>
 </document>

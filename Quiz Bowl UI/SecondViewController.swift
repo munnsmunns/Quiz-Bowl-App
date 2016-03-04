@@ -21,11 +21,17 @@ class SecondViewController: NSViewController {
     @IBOutlet weak var team2Round2: NSTextField!
     @IBOutlet weak var team1NameChange: NSTextField!
     @IBOutlet weak var team2NameChange: NSTextField!
-    
+    @IBOutlet weak var changeGameButton: NSButton!
+    @IBOutlet weak var mainTitle: NSTextField!
+    @IBOutlet var settingsViewController: NSView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        //Make sure the button shows the right text in the settings page
+        if  super.title == "Settings" && Data.title == "GRAB THAT MARKER" {
+            changeGameButton.title = "Change to QUIZ BOWL"
+        }
     }
     
     @IBAction func clickDoneButton(sender: AnyObject) {
@@ -55,6 +61,18 @@ class SecondViewController: NSViewController {
         }
         
         dismissController(SecondViewController)
+    }
+    
+    @IBAction func changeGameButton(sender: AnyObject) {
+        changeGameButton.title = "Change to " + Data.title
+        
+        if Data.title == "QUIZ BOWL" {
+            Data.title = "GRAB THAT MARKER"
+        }
+        else {
+            Data.title = "QUIZ BOWL"
+        }
+        
     }
     
     weak var delegate: DetailsDelegate?
