@@ -1081,7 +1081,7 @@ Gw
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLI-Vv-XSa">
                                 <rect key="frame" x="0.0" y="0.0" width="1350" height="1011"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="Quiz Bowl Starting Page" id="q7s-Gp-ZSJ"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="Quiz Bowl Starting Page copy" id="q7s-Gp-ZSJ"/>
                             </imageView>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLi-ar-rz8">
                                 <rect key="frame" x="32" y="945" width="72" height="32"/>
@@ -1141,13 +1141,13 @@ Gw
         </scene>
     </scenes>
     <resources>
-        <image name="Quiz Bowl Starting Page" width="800" height="600"/>
+        <image name="Quiz Bowl Starting Page copy" width="800" height="600"/>
         <image name="images" width="135" height="90"/>
         <image name="pcat" width="390" height="290"/>
         <image name="pcat1" width="390" height="290"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xPn-sa-C43"/>
-        <segue reference="0Sd-ru-kib"/>
+        <segue reference="Umj-QL-Zgd"/>
     </inferredMetricsTieBreakers>
 </document>
