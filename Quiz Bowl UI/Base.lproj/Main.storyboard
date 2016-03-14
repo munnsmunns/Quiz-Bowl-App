@@ -943,7 +943,7 @@ Gw
                 <customObject id="MNr-MK-N3l" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="KHJ-Yi-SjR"/>
             </objects>
-            <point key="canvasLocation" x="838.5" y="895"/>
+            <point key="canvasLocation" x="866.5" y="855"/>
         </scene>
         <!--Change Team Name-->
         <scene sceneID="jIe-dM-c94">
