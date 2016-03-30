@@ -27,6 +27,14 @@ class ViewController: NSViewController, DetailsDelegate {
     
     @IBOutlet weak var titleTextField: NSTextField!
     
+    @IBOutlet weak var possessionButton: NSButton!
+    
+    @IBOutlet weak var team1Img: NSImageView!
+    
+    @IBOutlet weak var team2Img: NSImageView!
+    
+    @IBOutlet weak var sneaky: NSImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -62,7 +70,13 @@ class ViewController: NSViewController, DetailsDelegate {
         score2TextField.stringValue = String(Data.teamScore(1))
         
         //question number
-        roundNumberTextField.stringValue = String(Data.question)
+        if (Data.question > 60) {
+            roundNumberTextField.stringValue = String(60)
+        }
+        else {
+            roundNumberTextField.stringValue = String(Data.question)
+        }
+        
         
         //team names
         team1TextField.stringValue = Data.team1Name
@@ -71,6 +85,15 @@ class ViewController: NSViewController, DetailsDelegate {
         //game title
         titleTextField.stringValue = Data.title
         
+        //possession for GTM
+        if (Data.title == "GRAB THAT MARKER") {
+            possessionButton.hidden = false
+            sneaky.hidden = true
+        }
+        else {
+            possessionButton.hidden = true
+            sneaky.hidden = false
+        }
     }
 
     @IBAction func Team1TenPoints(sender: AnyObject) {
@@ -119,6 +142,11 @@ class ViewController: NSViewController, DetailsDelegate {
         dismissController(ViewController)
     }
     
+    @IBAction func ChangePossessionButton(sender: AnyObject) {
+        team1Img.hidden = !team1Img.hidden
+        team2Img.hidden = !team2Img.hidden
+
+    }
     /*tableView black magic
     func reloadFileList() {
         directoryItems = directory?.contentsOrderedBy(sortOrder, ascending: sortAscending)

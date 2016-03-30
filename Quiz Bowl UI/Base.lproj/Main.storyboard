@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F1605" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="O7p-Ia-jVu">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F1713" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="O7p-Ia-jVu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9046"/>
     </dependencies>
@@ -667,7 +667,7 @@ Gw
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-515.5" y="289"/>
+            <point key="canvasLocation" x="-515.5" y="295"/>
         </scene>
         <!--Main Page-->
         <scene sceneID="hIz-AP-VOD">
@@ -678,12 +678,20 @@ Gw
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="63H-vR-f9g">
-                                <rect key="frame" x="1" y="-5" width="1353" height="1014"/>
+                                <rect key="frame" x="1" y="-6" width="1353" height="1014"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="axesIndependently" image="images" id="twv-vS-vpX"/>
                             </imageView>
                             <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e2Q-go-SVN">
                                 <rect key="frame" x="733" y="185" width="616" height="447"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="axesIndependently" image="pcat1" id="JA0-bc-YFI"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ylQ-k1-Mh8">
+                                <rect key="frame" x="276" y="759" width="48" height="48"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="pcat" id="6pr-Hm-F8p"/>
+                            </imageView>
+                            <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9I-0a-Yx3">
+                                <rect key="frame" x="1017" y="759" width="48" height="48"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="pcat1" id="tUJ-IA-f8h"/>
                             </imageView>
                             <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SbY-Of-lRX">
                                 <rect key="frame" x="0.0" y="180" width="616" height="459"/>
@@ -697,6 +705,10 @@ Gw
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNu-8U-2vj">
+                                <rect key="frame" x="273" y="759" width="2013" height="48"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="images" id="GuE-to-Rqb"/>
+                            </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hNT-ox-Uhn">
                                 <rect key="frame" x="123" y="468" width="354" height="87"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Score 1" id="Lzm-jg-3Os">
@@ -826,13 +838,27 @@ Gw
                                     <segue destination="Url-Eg-Rh3" kind="popover" popoverAnchorView="yKM-8Y-BUR" popoverBehavior="t" preferredEdge="maxY" id="byt-Vi-WFJ"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wKq-4Q-hF0">
+                                <rect key="frame" x="585" y="654" width="174" height="32"/>
+                                <buttonCell key="cell" type="push" title="Change Possession" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1ZY-pY-3N3">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="ChangePossessionButton:" target="XfG-lQ-9wD" id="HsG-jX-uVA"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="possessionButton" destination="wKq-4Q-hF0" id="Ce8-2Z-1Fa"/>
                         <outlet property="roundNumberTextField" destination="6tA-FC-hGU" id="mxe-iv-Ja1"/>
                         <outlet property="score1TextField" destination="hNT-ox-Uhn" id="RIY-lO-Olx"/>
                         <outlet property="score2TextField" destination="iV7-Wj-HhH" id="Hbi-U8-1IB"/>
+                        <outlet property="sneaky" destination="WNu-8U-2vj" id="6Ku-2I-K4z"/>
+                        <outlet property="team1Img" destination="ylQ-k1-Mh8" id="s4O-Br-tZ8"/>
                         <outlet property="team1TextField" destination="vKA-Mx-h5G" id="leg-uq-8NA"/>
+                        <outlet property="team2Img" destination="y9I-0a-Yx3" id="R5N-Q0-Kr5"/>
                         <outlet property="team2TextField" destination="a90-Xr-F8i" id="7pj-Sg-r9k"/>
                         <outlet property="titleTextField" destination="1Cg-Ac-cmd" id="bQc-Ka-DB8"/>
                     </connections>
@@ -1083,16 +1109,6 @@ Gw
                                 <rect key="frame" x="0.0" y="0.0" width="1350" height="1011"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="Quiz Bowl Starting Page copy" id="q7s-Gp-ZSJ"/>
                             </imageView>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLi-ar-rz8">
-                                <rect key="frame" x="32" y="945" width="72" height="32"/>
-                                <buttonCell key="cell" type="push" title="QUIT" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9zw-Cj-eUI">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name="Krungthep"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="terminate:" target="gPD-38-6Jq" id="1wL-aw-CAk"/>
-                                </connections>
-                            </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAt-zi-Ul8">
                                 <rect key="frame" x="200" y="781" width="951" height="154"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="QUIZ BOWL" id="8En-O2-DyV">
@@ -1101,8 +1117,18 @@ Gw
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLi-ar-rz8">
+                                <rect key="frame" x="1125" y="117" width="92" height="32"/>
+                                <buttonCell key="cell" type="push" title="QUIT" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9zw-Cj-eUI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="15" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="terminate:" target="gPD-38-6Jq" id="1wL-aw-CAk"/>
+                                </connections>
+                            </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DSy-RG-3Le">
-                                <rect key="frame" x="185" y="114" width="764" height="45"/>
+                                <rect key="frame" x="135" y="112" width="764" height="45"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="By Wyatt Rawson and Matt Munns EHS MAD 2015 - 2016" id="SM1-um-Yg9">
                                     <font key="font" size="25" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1110,7 +1136,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ASd-vz-uYC">
-                                <rect key="frame" x="1050" y="119" width="120" height="32"/>
+                                <rect key="frame" x="1000" y="117" width="120" height="32"/>
                                 <buttonCell key="cell" type="push" title="SETTINGS" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ubm-bE-fmz">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="15" name="Krungthep"/>
@@ -1120,7 +1146,7 @@ Gw
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeQ-sf-Sbb">
-                                <rect key="frame" x="949" y="119" width="92" height="32"/>
+                                <rect key="frame" x="899" y="117" width="92" height="32"/>
                                 <buttonCell key="cell" type="push" title="PLAY" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uBv-kG-2hd">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="15" name="Krungthep"/>
@@ -1147,7 +1173,7 @@ Gw
         <image name="pcat1" width="390" height="290"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xPn-sa-C43"/>
-        <segue reference="Umj-QL-Zgd"/>
+        <segue reference="0Sd-ru-kib"/>
+        <segue reference="cq2-FE-JQM"/>
     </inferredMetricsTieBreakers>
 </document>
