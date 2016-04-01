@@ -61,8 +61,6 @@ public class Data {
     
     static func reset() ->  Void {
         //reset data to initial value
-        team1Name = "Team 1"
-        team2Name = "Team 2"
         question = 1
         let size = scores[0].count
         for var x = 0; x < size; x++ {

@@ -35,6 +35,8 @@ class ViewController: NSViewController, DetailsDelegate {
     
     @IBOutlet weak var sneaky: NSImageView!
     
+    @IBOutlet weak var lightningRoundButton: NSButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -88,10 +90,12 @@ class ViewController: NSViewController, DetailsDelegate {
         //possession for GTM
         if (Data.title == "GRAB THAT MARKER") {
             possessionButton.hidden = false
+            lightningRoundButton.hidden = true
             sneaky.hidden = true
         }
         else {
             possessionButton.hidden = true
+            lightningRoundButton.hidden = false
             sneaky.hidden = false
         }
     }
@@ -197,5 +201,3 @@ extension ViewController : NSTableViewDelegate {
         return nil
     }
 }*/
-
-

@@ -73,6 +73,8 @@ class SecondViewController: NSViewController {
             Data.title = "QUIZ BOWL"
         }
         
+        Data.reset()
+        
     }
     
     weak var delegate: DetailsDelegate?
