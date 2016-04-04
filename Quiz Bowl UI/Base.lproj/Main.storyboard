@@ -656,10 +656,10 @@ Gw
                     <window key="window" title="Quiz Bowl" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="0.0" y="127" width="960" height="720"/>
+                        <rect key="contentRect" x="413" y="150" width="960" height="720"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="minSize" type="size" width="1485" height="900"/>
-                        <value key="maxSize" type="size" width="1485" height="900"/>
+                        <value key="minSize" type="size" width="960" height="720"/>
+                        <value key="maxSize" type="size" width="960" height="720"/>
                     </window>
                     <connections>
                         <segue destination="O7p-Ia-jVu" kind="relationship" relationship="window.shadowedContentViewController" id="etG-UY-c2J"/>
@@ -667,7 +667,7 @@ Gw
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-926" y="418"/>
+            <point key="canvasLocation" x="-908" y="984"/>
         </scene>
         <!--Main Page-->
         <scene sceneID="hIz-AP-VOD">
@@ -866,7 +866,7 @@ Gw
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-926" y="2108"/>
+            <point key="canvasLocation" x="1190" y="984"/>
         </scene>
         <!--Lightning Round-->
         <scene sceneID="o2b-9h-l2T">
@@ -970,7 +970,7 @@ Gw
                 <customObject id="MNr-MK-N3l" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="KHJ-Yi-SjR"/>
             </objects>
-            <point key="canvasLocation" x="866.5" y="855"/>
+            <point key="canvasLocation" x="1190.5" y="445"/>
         </scene>
         <!--Change Team Name-->
         <scene sceneID="jIe-dM-c94">
@@ -1039,7 +1039,7 @@ Gw
                 </viewController>
                 <customObject id="e4U-mo-22A" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1428" y="687"/>
+            <point key="canvasLocation" x="1490" y="1829"/>
         </scene>
         <!--Settings-->
         <scene sceneID="o8x-ZC-3x7">
@@ -1096,7 +1096,7 @@ Gw
                 </viewController>
                 <customObject id="Sq5-tf-12W" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-926" y="2966"/>
+            <point key="canvasLocation" x="680" y="1822"/>
         </scene>
         <!--Starting Page-->
         <scene sceneID="1Rc-vN-L76">
@@ -1164,7 +1164,7 @@ Gw
                 </viewController>
                 <customObject id="gPD-38-6Jq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-926" y="1280"/>
+            <point key="canvasLocation" x="206" y="984"/>
         </scene>
     </scenes>
     <resources>
@@ -1174,6 +1174,6 @@ Gw
         <image name="pcat1" width="390" height="290"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Umj-QL-Zgd"/>
+        <segue reference="0Sd-ru-kib"/>
     </inferredMetricsTieBreakers>
 </document>
