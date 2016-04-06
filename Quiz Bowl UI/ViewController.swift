@@ -141,9 +141,13 @@ class ViewController: NSViewController, DetailsDelegate {
         updateText()
     }
     
-    @IBAction func EndGameButton(sender: AnyObject) {
-        Data.reset()
-        dismissController(ViewController)
+    @IBAction func UndoButton(sender: AnyObject) {
+        if Data.question > 1 {
+            Data.question--
+        }
+        Data.scores[0][Data.question] = 0
+        Data.scores[1][Data.question] = 0
+        updateText()
     }
     
     @IBAction func ChangePossessionButton(sender: AnyObject) {

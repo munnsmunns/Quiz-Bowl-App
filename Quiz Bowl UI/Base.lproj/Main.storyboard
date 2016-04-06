@@ -800,7 +800,7 @@ Gw
                                     <font key="font" size="13" name="Krungthep"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="EndGameButton:" target="XfG-lQ-9wD" id="B9R-O3-EWv"/>
+                                    <action selector="dismissController:" target="rPt-NT-nkU" id="Qdu-c7-lm6"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Cg-Ac-cmd">
@@ -846,6 +846,16 @@ Gw
                                 </buttonCell>
                                 <connections>
                                     <action selector="ChangePossessionButton:" target="XfG-lQ-9wD" id="HsG-jX-uVA"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucW-NN-4RI">
+                                <rect key="frame" x="443" y="321" width="75" height="32"/>
+                                <buttonCell key="cell" type="push" title="Undo" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LZO-gl-FhY">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="UndoButton:" target="XfG-lQ-9wD" id="7mL-GV-cTL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -943,7 +953,7 @@ Gw
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t2g-CJ-Rnn">
-                                <rect key="frame" x="179" y="87" width="57" height="17"/>
+                                <rect key="frame" x="175" y="87" width="65" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Round 1" id="BMd-ff-Ijq">
                                     <font key="font" size="13" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -951,7 +961,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1V-KK-Tnl">
-                                <rect key="frame" x="179" y="60" width="57" height="17"/>
+                                <rect key="frame" x="175" y="57" width="65" height="20"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Round 2" id="utN-H0-hLf">
                                     <font key="font" size="13" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1096,7 +1106,7 @@ Gw
                 </viewController>
                 <customObject id="Sq5-tf-12W" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680" y="1822"/>
+            <point key="canvasLocation" x="702" y="1820"/>
         </scene>
         <!--Starting Page-->
         <scene sceneID="1Rc-vN-L76">
