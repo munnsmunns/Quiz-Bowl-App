@@ -883,7 +883,7 @@ Gw
             <objects>
                 <viewController title="Lightning Round" id="Url-Eg-Rh3" customClass="SecondViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="7gH-QY-qxn">
-                        <rect key="frame" x="0.0" y="0.0" width="415" height="198"/>
+                        <rect key="frame" x="0.0" y="0.0" width="415" height="235"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="URC-Tg-A67">
@@ -944,6 +944,16 @@ Gw
                                     <action selector="clickDoneButton:" target="Url-Eg-Rh3" id="qDM-Ly-CHi"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qx5-Lh-g4s">
+                                <rect key="frame" x="213" y="133" width="76" height="32"/>
+                                <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AM7-ng-qwv">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="timer30:" target="Url-Eg-Rh3" id="5gC-hi-Sb2"/>
+                                </connections>
+                            </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t2g-CJ-Rnn">
                                 <rect key="frame" x="175" y="87" width="65" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Round 1" id="BMd-ff-Ijq">
@@ -961,43 +971,39 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NgL-p2-e1X">
-                                <rect key="frame" x="206" y="154" width="53" height="20"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="60 Sec" id="7ZJ-kQ-Y1u">
-                                    <font key="font" size="13" name="Krungthep"/>
+                                <rect key="frame" x="129" y="162" width="68" height="31"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="60" id="7ZJ-kQ-Y1u">
+                                    <font key="font" size="20" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tfe-Uk-RdX">
-                                <rect key="frame" x="289" y="154" width="53" height="20"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="30 Sec" id="ctO-TO-pzH">
-                                    <font key="font" size="13" name="Krungthep"/>
+                                <rect key="frame" x="217" y="162" width="68" height="31"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="30" id="ctO-TO-pzH">
+                                    <font key="font" size="20" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hcI-6e-AQo">
+                                <rect key="frame" x="125" y="133" width="76" height="32"/>
+                                <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="B6K-ox-bbH">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="timer60:" target="Url-Eg-Rh3" id="SRE-yz-gcV"/>
+                                </connections>
+                            </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zgp-bK-FfW">
-                                <rect key="frame" x="46" y="152" width="156" height="26"/>
+                                <rect key="frame" x="129" y="192" width="156" height="26"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Lightning Round" id="jdI-fm-svu">
                                     <font key="font" size="17" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwa-h5-dR8">
-                                <rect key="frame" x="260" y="153" width="23" height="21"/>
-                                <buttonCell key="cell" type="disclosureTriangle" alternateTitle="30 sec play" bezelStyle="disclosure" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Z41-Of-ZeB">
-                                    <behavior key="behavior" pushIn="YES" changeBackground="YES" changeGray="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w1E-w9-kLW">
-                                <rect key="frame" x="343" y="153" width="23" height="21"/>
-                                <buttonCell key="cell" type="disclosureTriangle" alternateTitle="60 sec play" bezelStyle="disclosure" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h03-su-mTo">
-                                    <behavior key="behavior" pushIn="YES" changeBackground="YES" changeGray="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -1005,12 +1011,16 @@ Gw
                         <outlet property="team1Round2" destination="Zce-wf-K2T" id="lhM-ZI-j9S"/>
                         <outlet property="team2Round1" destination="SZL-Mi-r9s" id="cvv-ga-MEN"/>
                         <outlet property="team2Round2" destination="6cT-qU-cbx" id="OWv-t3-X1k"/>
+                        <outlet property="timerButton30" destination="Qx5-Lh-g4s" id="5Al-RJ-rJo"/>
+                        <outlet property="timerButton60" destination="hcI-6e-AQo" id="mgs-ul-uVy"/>
+                        <outlet property="timerLabel30" destination="tfe-Uk-RdX" id="XuF-Xz-5Gk"/>
+                        <outlet property="timerLabel60" destination="NgL-p2-e1X" id="HXa-3I-Gkg"/>
                     </connections>
                 </viewController>
                 <customObject id="MNr-MK-N3l" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="KHJ-Yi-SjR"/>
             </objects>
-            <point key="canvasLocation" x="1190.5" y="445"/>
+            <point key="canvasLocation" x="1190.5" y="422.5"/>
         </scene>
         <!--Change Team Name-->
         <scene sceneID="jIe-dM-c94">
@@ -1079,7 +1089,7 @@ Gw
                 </viewController>
                 <customObject id="e4U-mo-22A" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1490" y="1829"/>
+            <point key="canvasLocation" x="1488" y="1820"/>
         </scene>
         <!--Settings-->
         <scene sceneID="o8x-ZC-3x7">

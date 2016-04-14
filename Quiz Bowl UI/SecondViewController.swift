@@ -24,6 +24,14 @@ class SecondViewController: NSViewController {
     @IBOutlet weak var changeGameButton: NSButton!
     @IBOutlet weak var mainTitle: NSTextField!
     @IBOutlet var settingsViewController: NSView!
+    @IBOutlet weak var timerLabel60: NSTextField!
+    @IBOutlet weak var timerLabel30: NSTextField!
+    @IBOutlet weak var timerButton60: NSButton!
+    @IBOutlet weak var timerButton30: NSButton!
+    
+    var timer = NSTimer()
+    var counter60 = 60
+    var counter30 = 30
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +40,45 @@ class SecondViewController: NSViewController {
         if  super.title == "Settings" && Data.title == "GRAB THAT MARKER" {
             changeGameButton.title = "Change to QUIZ BOWL"
         }
+        
     }
+    
+    func updateCounter60() {
+        counter60 -= 1
+        
+        
+        switch (counter60){
+        //display STOP when it reaches zero
+        case 0:
+            timerLabel60.stringValue = "STOP"
+        //after one second, stop and reset the timer
+        case -1:
+            counter60 = 60
+            timer.invalidate()
+            timerLabel60.stringValue = String(counter60)
+        default:
+            timerLabel60.stringValue = String(counter60)
+        }
+    }
+    
+    func updateCounter30() {
+        counter30 -= 1
+        
+        switch (counter30){
+            //display STOP when it reaches zero
+        case 0:
+            timerLabel30.stringValue = "STOP"
+            //after one second, stop and reset the timer
+        case -1:
+            counter30 = 30
+            timer.invalidate()
+            timerLabel30.stringValue = String(counter30)
+        default:
+            timerLabel30.stringValue = String(counter30)
+        }
+
+    }
+
     
     @IBAction func clickDoneButton(sender: AnyObject) {
         //Add points to team scores
@@ -76,6 +122,33 @@ class SecondViewController: NSViewController {
         Data.reset()
         
     }
+    @IBAction func timer60(sender: AnyObject) {
+        if timerButton60.title == "Start" {
+            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCounter60", userInfo: nil, repeats: true)
+            timerButton60.title = "Reset"
+        }
+        else {
+            counter60 = 60
+            timer.invalidate()
+            timerLabel60.stringValue = String(counter60)
+            timerButton60.title = "Start"
+        }
+    }
+    
+    @IBAction func timer30(sender: AnyObject) {
+        
+        if timerButton30.title == "Start" {
+            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCounter30", userInfo: nil, repeats: true)
+            timerButton30.title = "Reset"
+        }
+        else {
+            counter30 = 30
+            timer.invalidate()
+            timerLabel30.stringValue = String(counter30)
+            timerButton30.title = "Start"
+        }
+
+    }
     
     weak var delegate: DetailsDelegate?
     //call updateText function when window closes
@@ -84,6 +157,7 @@ class SecondViewController: NSViewController {
         
         delegate?.updateText()
     }
+    
     
 
     
