@@ -13,7 +13,7 @@ public class Data {
     
     public static var team2Name = "Team 2"
     
-    public static var scores = [[Int]](count: 2, repeatedValue: [Int](count: 61, repeatedValue: 0) )
+    public static var scores = [[Int]](count: 2, repeatedValue: [Int](count: 101, repeatedValue: 0) )
     
     public static var question = 1
     
@@ -46,7 +46,7 @@ public class Data {
         }
         
         scores[team][question] = WIN + extra
-        
+        question++
         return
     }
     

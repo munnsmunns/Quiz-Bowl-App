@@ -72,8 +72,8 @@ class ViewController: NSViewController, DetailsDelegate {
         score2TextField.stringValue = String(Data.teamScore(1))
         
         //question number
-        if (Data.question > 60) {
-            roundNumberTextField.stringValue = String(60)
+        if (Data.question > 100) {
+            roundNumberTextField.stringValue = String(100)
         }
         else {
             roundNumberTextField.stringValue = String(Data.question)
@@ -103,7 +103,6 @@ class ViewController: NSViewController, DetailsDelegate {
     @IBAction func Team1TenPoints(sender: AnyObject) {
         //make changes to data
         Data.winRound(0, gotBonus: false)
-        Data.question++
         //make changes to text
         updateText()
         
@@ -112,7 +111,6 @@ class ViewController: NSViewController, DetailsDelegate {
     @IBAction func Team1BonusPoints(sender: AnyObject) {
         //make changes to data
         Data.winRound(0, gotBonus: true)
-        Data.question++
         //make changes to text
         updateText()
 
@@ -121,7 +119,6 @@ class ViewController: NSViewController, DetailsDelegate {
     @IBAction func Team2TenPoints(sender: AnyObject) {
         //make changes to data
         Data.winRound(1, gotBonus: false)
-        Data.question++
         //make changes to text
         updateText()
 
@@ -130,7 +127,6 @@ class ViewController: NSViewController, DetailsDelegate {
     @IBAction func Team2BonusPoints(sender: AnyObject) {
         //make changes to data
         Data.winRound(1, gotBonus: true)
-        Data.question++
         //make changes to text
         updateText()
 

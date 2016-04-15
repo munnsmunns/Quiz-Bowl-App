@@ -816,7 +816,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6tA-FC-hGU">
-                                <rect key="frame" x="531" y="559" width="44" height="38"/>
+                                <rect key="frame" x="531" y="559" width="63" height="38"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="1" id="afd-kd-KeO">
                                     <font key="font" size="24" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
