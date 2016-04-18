@@ -1206,6 +1206,14 @@ Gw
                                     <segue destination="XfG-lQ-9wD" kind="sheet" id="xPn-sa-C43"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1TS-sM-mi1">
+                                <rect key="frame" x="848" y="20" width="94" height="24"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version 1.1" id="Ekj-M0-Awm">
+                                    <font key="font" size="15" name="Krungthep"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
@@ -1214,7 +1222,7 @@ Gw
                 </viewController>
                 <customObject id="gPD-38-6Jq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="206" y="984"/>
+            <point key="canvasLocation" x="207" y="984"/>
         </scene>
     </scenes>
     <resources>
@@ -1224,6 +1232,6 @@ Gw
         <image name="pcat1" width="390" height="290"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0Sd-ru-kib"/>
+        <segue reference="Umj-QL-Zgd"/>
     </inferredMetricsTieBreakers>
 </document>
