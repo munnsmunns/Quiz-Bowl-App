@@ -647,7 +647,7 @@ Gw
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Quiz_Bowl_UI" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-459.5" y="-397"/>
+            <point key="canvasLocation" x="-907.5" y="451"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -1207,8 +1207,8 @@ Gw
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1TS-sM-mi1">
-                                <rect key="frame" x="848" y="20" width="94" height="24"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version 1.1" id="Ekj-M0-Awm">
+                                <rect key="frame" x="833" y="20" width="109" height="24"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version 1.1.1" id="Ekj-M0-Awm">
                                     <font key="font" size="15" name="Krungthep"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>

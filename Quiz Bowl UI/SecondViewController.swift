@@ -15,6 +15,7 @@ public protocol DetailsDelegate: class {
 
 class SecondViewController: NSViewController {
 
+    //they all weak like josh
     @IBOutlet weak var team1Round1: NSTextField!
     @IBOutlet weak var team1Round2: NSTextField!
     @IBOutlet weak var team2Round1: NSTextField!
@@ -29,7 +30,8 @@ class SecondViewController: NSViewController {
     @IBOutlet weak var timerButton60: NSButton!
     @IBOutlet weak var timerButton30: NSButton!
     
-    var timer = NSTimer()
+    var timer60 = NSTimer()
+    var timer30 = NSTimer()
     var counter60 = 60
     var counter30 = 30
     
@@ -54,8 +56,10 @@ class SecondViewController: NSViewController {
         //after one second, stop and reset the timer
         case -1:
             counter60 = 60
-            timer.invalidate()
+            timer60.invalidate()
             timerLabel60.stringValue = String(counter60)
+            timerLabel60.textColor = NSColor.blackColor()
+
         default:
             timerLabel60.stringValue = String(counter60)
         }
@@ -71,8 +75,10 @@ class SecondViewController: NSViewController {
             //after one second, stop and reset the timer
         case -1:
             counter30 = 30
-            timer.invalidate()
+            timer30.invalidate()
             timerLabel30.stringValue = String(counter30)
+            timerLabel30.textColor = NSColor.blackColor()
+
         default:
             timerLabel30.stringValue = String(counter30)
         }
@@ -124,13 +130,15 @@ class SecondViewController: NSViewController {
     }
     @IBAction func timer60(sender: AnyObject) {
         if timerButton60.title == "Start" {
-            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCounter60", userInfo: nil, repeats: true)
+            timer60 = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCounter60", userInfo: nil, repeats: true)
             timerButton60.title = "Reset"
+            timerLabel60.textColor = NSColor.blueColor()
         }
         else {
             counter60 = 60
-            timer.invalidate()
+            timer60.invalidate()
             timerLabel60.stringValue = String(counter60)
+            timerLabel60.textColor = NSColor.blackColor()
             timerButton60.title = "Start"
         }
     }
@@ -138,13 +146,16 @@ class SecondViewController: NSViewController {
     @IBAction func timer30(sender: AnyObject) {
         
         if timerButton30.title == "Start" {
-            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCounter30", userInfo: nil, repeats: true)
+            timer30 = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCounter30", userInfo: nil, repeats: true)
             timerButton30.title = "Reset"
+            timerLabel30.textColor = NSColor.blueColor()
+
         }
         else {
             counter30 = 30
-            timer.invalidate()
+            timer30.invalidate()
             timerLabel30.stringValue = String(counter30)
+            timerLabel30.textColor = NSColor.blackColor()
             timerButton30.title = "Start"
         }
 
