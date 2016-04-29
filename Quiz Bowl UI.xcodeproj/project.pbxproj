@@ -19,6 +19,7 @@
 		FD8FB4D31BEA6C04009984A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD8FB4D11BEA6C04009984A0 /* Main.storyboard */; };
 		FD8FB4DE1BEA6C04009984A0 /* Quiz_Bowl_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FB4DD1BEA6C04009984A0 /* Quiz_Bowl_UITests.swift */; };
 		FDB28A1C1C97152C00AAB13E /* Quiz Bowl Starting Page copy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDB28A1B1C97152C00AAB13E /* Quiz Bowl Starting Page copy.jpg */; };
+		FDE357031CD267C300B7A202 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE357021CD267C300B7A202 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		FD8FB4DD1BEA6C04009984A0 /* Quiz_Bowl_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_Bowl_UITests.swift; sourceTree = "<group>"; };
 		FD8FB4DF1BEA6C04009984A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDB28A1B1C97152C00AAB13E /* Quiz Bowl Starting Page copy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Quiz Bowl Starting Page copy.jpg"; sourceTree = "<group>"; };
+		FDE357021CD267C300B7A202 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				FD8FB4CD1BEA6C04009984A0 /* ViewController.swift */,
 				FD8FB4CF1BEA6C04009984A0 /* Assets.xcassets */,
 				FD8FB4D11BEA6C04009984A0 /* Main.storyboard */,
+				FDE357021CD267C300B7A202 /* ThirdViewController.swift */,
 				FD44B2901C1F2CB4001CC950 /* pcat1.jpg */,
 				FD65DDD81C231E3900CDB6CF /* AppIcon.appiconset */,
 				FD44B28E1C1F2BD9001CC950 /* images.png */,
@@ -220,6 +223,7 @@
 			files = (
 				FD1AEDA31C6A50DD00466662 /* SecondViewController.swift in Sources */,
 				FD8FB4CE1BEA6C04009984A0 /* ViewController.swift in Sources */,
+				FDE357031CD267C300B7A202 /* ThirdViewController.swift in Sources */,
 				FD8FB4CC1BEA6C04009984A0 /* AppDelegate.swift in Sources */,
 				FD43334D1C738C78005685E1 /* Data.swift in Sources */,
 			);
