@@ -669,14 +669,22 @@ Gw
             </objects>
             <point key="canvasLocation" x="-908" y="984"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="Baw-tr-uTQ">
             <objects>
-                <viewController id="pbs-Ke-bxr" sceneMemberID="viewController">
+                <viewController id="pbs-Ke-bxr" customClass="ThirdViewController" customModule="Quiz_Bowl_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="3kf-hw-ECI">
                         <rect key="frame" x="0.0" y="0.0" width="960" height="720"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUI-U1-Cja">
+                                <rect key="frame" x="133" y="598" width="694" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="    h   " id="lme-SG-MpJ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JCA-YZ-SxX">
                                 <rect key="frame" x="427" y="648" width="106" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Congratulations!" id="CKP-7x-vd0">
@@ -685,16 +693,11 @@ Gw
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUI-U1-Cja">
-                                <rect key="frame" x="461" y="599" width="40" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="    h   " id="lme-SG-MpJ">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="congratsTextField" destination="vUI-U1-Cja" id="kXo-3g-q8q"/>
+                    </connections>
                 </viewController>
                 <customObject id="R3c-Xj-X2L" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -827,7 +830,7 @@ Gw
                                     <font key="font" size="13" name="Krungthep"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="dismissController:" target="rPt-NT-nkU" id="Qdu-c7-lm6"/>
+                                    <segue destination="pbs-Ke-bxr" kind="sheet" id="mmh-ja-Ghe"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Cg-Ac-cmd">
@@ -1263,6 +1266,6 @@ Gw
         <image name="pcat1" width="390" height="290"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Umj-QL-Zgd"/>
+        <segue reference="0Sd-ru-kib"/>
     </inferredMetricsTieBreakers>
 </document>

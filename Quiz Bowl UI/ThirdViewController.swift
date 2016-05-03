@@ -7,10 +7,29 @@
 //
 
 import Foundation
+import AppKit
 
-if (Data.teamscore(1) > Data.teamscore(2) {
-print(Team1Name + " beat " + Team2Name + " by " + Data.teamscore(1) - Data.teamscore(2) + " points!")
-}
-else if(Data.Teamscore(2) > Data.TeamScore(1) {
-print(Team2Name + " beat " + Team1Name + " by " + Data.teamscore(2) - Data.teamScore(1) + " points!")
+class ThirdViewController: NSViewController {
+    
+    @IBOutlet weak var congratsTextField: NSTextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //set label to say the score difference and which team won
+        var points = Data.teamScore(1) - Data.teamScore(2)
+        points = abs(points)
+        
+        if Data.teamScore(1) > Data.teamScore(2) {
+            congratsTextField.stringValue = String(Data.team1Name) + " beat " + String(Data.team2Name) + " by " + String(points) + " points!"
+        }
+        else if(Data.teamScore(2) > Data.teamScore(1)) {
+            congratsTextField.stringValue = String(Data.team2Name) + " beat " + String(Data.team1Name) + " by " + String(points) + " points!"
+        }
+        else {
+            congratsTextField.stringValue = "It's a tie!"
+        }
+
+    }
+    
 }

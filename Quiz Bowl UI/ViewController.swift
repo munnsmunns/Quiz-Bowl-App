@@ -60,7 +60,7 @@ class ViewController: NSViewController, DetailsDelegate {
     override func prepareForSegue(segue: NSStoryboardSegue, sender: AnyObject?) {
         
         //only use changes with lightning round
-            
+        
         let controller: SecondViewController! = segue.destinationController as! SecondViewController
         controller.delegate = self
 
