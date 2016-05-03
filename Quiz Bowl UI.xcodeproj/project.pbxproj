@@ -201,7 +201,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD8FB4D01BEA6C04009984A0 /* Assets.xcassets in Resources */,
-				FD44B28F1C1F2BD9001CC950 /* images.png in Resources */,
 				FD8FB4D31BEA6C04009984A0 /* Main.storyboard in Resources */,
 				FD65DDD91C231E3900CDB6CF /* AppIcon.appiconset in Resources */,
 				FD44B28D1C1F2AD2001CC950 /* pcat.jpg in Resources */,

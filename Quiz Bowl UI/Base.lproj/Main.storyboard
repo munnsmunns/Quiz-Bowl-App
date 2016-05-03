@@ -649,6 +649,67 @@ Gw
             </objects>
             <point key="canvasLocation" x="-907.5" y="451"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="TdC-00-JP1">
+            <objects>
+                <viewController id="Yqq-i6-Zo6" sceneMemberID="viewController">
+                    <view key="view" id="KNo-l2-nEb">
+                        <rect key="frame" x="0.0" y="0.0" width="806" height="600"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0hW-RE-65V">
+                                <rect key="frame" x="135" y="173" width="91" height="32"/>
+                                <buttonCell key="cell" type="push" title="Settings" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4Sp-kx-Ob1">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="wkp-ee-F8e" kind="modal" id="I8q-Xa-h23"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UL3-xL-ZUu">
+                                <rect key="frame" x="546" y="173" width="107" height="32"/>
+                                <buttonCell key="cell" type="push" title="Play Game" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wQX-2h-poI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="XfG-lQ-9wD" kind="sheet" id="z4l-rw-leP"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ysh-lf-uqt">
+                                <rect key="frame" x="361" y="517" width="84" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="  Quiz Bowl" id="GeD-e3-tQ4">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fpd-kc-ylo">
+                                <rect key="frame" x="223" y="47" width="361" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="By Wyatt Rawson and Matt Munns EHS MAD 2015 - 2016" id="8Kn-Fs-zH1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8KT-W2-CzQ">
+                                <rect key="frame" x="7" y="558" width="142" height="32"/>
+                                <buttonCell key="cell" type="push" title="Close Quiz Bowl" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xsA-Ka-1cI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="performClose:" target="74Y-VZ-rWF" id="f3P-pQ-cdW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="74Y-VZ-rWF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-521" y="242"/>
+        </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
@@ -752,10 +813,10 @@ Gw
                                 <buttonCell key="cell" type="push" title="10 Points" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6yG-jo-TSm">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name="Krungthep"/>
-                                    <connections>
-                                        <action selector="Team1TenPoints:" target="XfG-lQ-9wD" id="ofk-Z8-JZ8"/>
-                                    </connections>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="Team1TenPoints:" target="XfG-lQ-9wD" id="b1G-wh-CdL"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FOL-z4-mpr">
                                 <rect key="frame" x="234" y="366" width="156" height="32"/>
