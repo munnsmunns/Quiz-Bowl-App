@@ -72,12 +72,8 @@ class ViewController: NSViewController, DetailsDelegate {
         score2TextField.stringValue = String(Data.teamScore(1))
         
         //question number
-        if (Data.question > 100) {
-            roundNumberTextField.stringValue = String(100)
-        }
-        else {
-            roundNumberTextField.stringValue = String(Data.question)
-        }
+        roundNumberTextField.stringValue = String(Data.question)
+        
         
         
         //team names
@@ -138,11 +134,12 @@ class ViewController: NSViewController, DetailsDelegate {
     }
     
     @IBAction func UndoButton(sender: AnyObject) {
-        if Data.question > 1 {
-            Data.question--
-        }
-        Data.scores[0][Data.question] = 0
-        Data.scores[1][Data.question] = 0
+        Data.undo()
+        updateText()
+    }
+    
+    @IBAction func RedoButton(sender: AnyObject) {
+        Data.redo()
         updateText()
     }
     
@@ -151,53 +148,5 @@ class ViewController: NSViewController, DetailsDelegate {
         team2Img.hidden = !team2Img.hidden
 
     }
-    /*tableView black magic
-    func reloadFileList() {
-        directoryItems = directory?.contentsOrderedBy(sortOrder, ascending: sortAscending)
-        scoreTable.reloadData()
-    }*/
+
 }
-    
-
-/*black magic so that the table will work
-
-extension ViewController : NSTableViewDataSource {
-    func numberOfRowsInTableView(tableView: NSTableView) -> Int {
-        return directoryItems?.count ?? 0
-    }
-}
-
-extension ViewController : NSTableViewDelegate {
-    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        
-        var image:NSImage?
-        var text:String = ""
-        var cellIdentifier: String = ""
-        
-        // 1
-        guard let item = directoryItems?[row] else {
-            return nil
-        }
-        
-        // 2
-        if tableColumn == tableView.tableColumns[0] {
-            image = item.icon
-            text = item.name
-            cellIdentifier = "NameCellID"
-        } else if tableColumn == tableView.tableColumns[1] {
-            text = item.date.description
-            cellIdentifier = "DateCellID"
-        } else if tableColumn == tableView.tableColumns[2] {
-            text = item.isFolder ? "--" : sizeFormatter.stringFromByteCount(item.size)
-            cellIdentifier = "SizeCellID"
-        }
-        
-        // 3
-        if let cell = tableView.makeViewWithIdentifier(cellIdentifier, owner: nil) as? NSTableCellView {
-            cell.textField?.stringValue = text
-            cell.imageView?.image = image ?? nil
-            return cell
-        }
-        return nil
-    }
-}*/

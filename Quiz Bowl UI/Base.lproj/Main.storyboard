@@ -845,13 +845,23 @@ Gw
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucW-NN-4RI">
-                                <rect key="frame" x="443" y="321" width="75" height="32"/>
+                                <rect key="frame" x="405" y="321" width="75" height="32"/>
                                 <buttonCell key="cell" type="push" title="Undo" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LZO-gl-FhY">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name="Krungthep"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="UndoButton:" target="XfG-lQ-9wD" id="7mL-GV-cTL"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3r-4m-OkT">
+                                <rect key="frame" x="480" y="321" width="75" height="32"/>
+                                <buttonCell key="cell" type="push" title="Redo" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dYG-hH-cfa">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="Krungthep"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="RedoButton:" target="XfG-lQ-9wD" id="W8F-75-1hB"/>
                                 </connections>
                             </button>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNu-8U-2vj">
@@ -1232,6 +1242,6 @@ Gw
         <image name="pcat1" width="390" height="290"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Umj-QL-Zgd"/>
+        <segue reference="0Sd-ru-kib"/>
     </inferredMetricsTieBreakers>
 </document>

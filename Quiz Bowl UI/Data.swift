@@ -13,7 +13,9 @@ public class Data {
     
     public static var team2Name = "Team 2"
     
-    public static var scores = [[Int]](count: 2, repeatedValue: [Int](count: 101, repeatedValue: 0) )
+    public static var scores = [[Int]](count: 2, repeatedValue: [Int](count: 1001, repeatedValue: 0) )
+    
+    public static var tempScores = scores
     
     public static var question = 1
     
@@ -31,6 +33,7 @@ public class Data {
         return sum
     }
     
+    //adds proper amount of points from winning into the array
     static func winRound(team: Int, gotBonus: Bool) -> Void {
         //bounds check
         if question >= scores[0].count || question < 0 || team < 0 ||
@@ -47,9 +50,14 @@ public class Data {
         
         scores[team][question] = WIN + extra
         question++
+        
+        //update tempScores, which is used for the redo button
+        tempScores = scores
+        
         return
     }
     
+    //sum of lightning round points stored in question 0 of the array
     static func lightningRound(team1Score: Int, team2Score: Int) -> Void {
         
         //lightning round score is saved in "question 0"
@@ -67,6 +75,32 @@ public class Data {
             scores[0][x] = 0
             scores[1][x] = 0
         }
+    }
+    
+    static func undo() -> Void {
+        //bounds check
+        if question > 1 {
+            question--
+        }
+        
+        //reset scores in previous question
+        scores[0][question] = 0
+        scores[1][question] = 0
+    }
+    
+    static func redo() -> Void {
+        //bounds check and make sure you can't redo too far
+        if (question >= scores[0].count || (tempScores[0][question] <= 0 &&
+            tempScores[1][question] <= 0)) {
+                
+                return
+        }
+        //tempScores saves the previous values for each question
+        scores[0][question] = tempScores[0][question]
+        scores[1][question] = tempScores[1][question]
+        
+        question++
+
     }
 
 }
